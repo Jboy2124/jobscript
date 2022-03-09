@@ -30,25 +30,90 @@
 
 
   /* HOME COMPONENTS */
+
+/* ABOUT HERO  */
 .home-container {
-    height: 50vh;
+    height: 70vh;
+    gap: 50px;
 }
 
 .grid {
-    height: 50vh;
+    height: 70vh;
     padding: 1px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text p {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.img-js  {
+    margin-top: 100px;
+    margin-left: 30px;
+    height: 60%;
+    width: 60%;
+}
+
+.img-js-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-js, .img-em {
+.js-title, .em-title {
+    background-color: #e63c3c;
+    color: white;
+    line-height: 30px;
+    width: 150px;
+    text-align: center;
+    margin-left: 0px;
+    border-radius: 3px;
+}
+
+.img-em {
     height: 50%;
     width: 50%;
 }
 
-.img-js-container, .img-em-container {
+.img-em-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+}
+
+
+/* UNDER HERO  */
+
+.under-hero {
+    height: 30vh;
+    /* border: 1px solid black; */
+}
+
+.card-people {
+    height: 100vh;
+    background-color: #e63c3c;
+    transform: skew(0deg, -8deg);
+
+}
+
+.card1 {
+    transform: skew(0deg, 8deg);
+    /* margin-top: -100px; */
+    /* position: absolute; */
+}
+
+.card2 {
+    transform: skew(0deg, 8deg);
+    /* margin-top: -300px; */
+    /* position: absolute; */
+    /* margin-right: 500px; */
 }
