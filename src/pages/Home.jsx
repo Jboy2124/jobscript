@@ -1,7 +1,7 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
-import JobSeeker from '../images/home-images/JobSeeker.jpg'
-import Employer from '../images/home-images/Employer.jpg'
+import JobSeeker from '../images/home-images/hero-img-1.jpg'
+import Employer from '../images/home-images/hero-img-2.jpg'
 import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material';
 
 
