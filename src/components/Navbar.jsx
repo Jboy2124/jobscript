@@ -1,11 +1,10 @@
-// import React from 'react';
+
 import { AppBar, Toolbar, CssBaseline, Typography, useTheme, useMediaQuery } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Link } from "react-router-dom";
 import Drawercomponent from './Drawercomponent'
 import logo from '../images/logo2.gif'
 import '../css/styles.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     navLink: {marginLeft: "5px", 
@@ -25,8 +24,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-
-
 const Navbar = () => {
 const classes = useStyles();
 const theme = useTheme();
@@ -41,7 +38,6 @@ const isMobile = useMediaQuery(theme.breakpoints.down("md"));
           </Typography>
           { (isMobile) ? (<Drawercomponent />) : 
             <div>
-                {/* <Link to= "/" className={classes.link}>HOME</Link> */}
                 <Link to= "/" className="links">HOME</Link>
                 <Link to= "/Services" className="links">SERVICES</Link>
                 <Link to= "/TheDeveloper" className="links">MEET THE TEAM</Link>
