@@ -1,0 +1,20 @@
+#card-container {
+    height: 90vh;
+    background-color: skyblue ;
+}
+
+#lower-container {
+    height: 40vh;
+    background-color:cadetblue;
+    text-align: center;
+}
+
+.card {
+    width: 18rem;
+
+}
+
+.dev-cards {
+    display: inline-block;
+    /* margin: 10px; */
+}
