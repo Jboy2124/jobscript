@@ -1,8 +1,11 @@
 import React from 'react'
 
+
 const TheDeveloper = () => {
   return (
-    <div>TheDeveloper</div>
+    <div className='container text-center'>
+      <h1>Hello</h1>
+    </div>
   )
 }
 
