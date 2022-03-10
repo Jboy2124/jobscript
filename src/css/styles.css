@@ -50,10 +50,21 @@
 }
 
 .hero-text p {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
-    margin-top: 0px;
-    padding: 0px;
+    margin: 0;
+    /* margin-top: 50px;
+    padding: 0px; */
+}
+
+.under {
+    display: block;
+}
+.under::after {
+    content: "p";
+    background-color: #e63c3c;
+    width: 10px;
+    height: 5px;
 }
 
 .img-js  {
@@ -94,26 +105,19 @@
 /* UNDER HERO  */
 
 .under-hero {
-    height: 30vh;
+    height: 50vh;
     /* border: 1px solid black; */
 }
 
 .card-people {
-    height: 100vh;
+    height: 50vh;
     background-color: #e63c3c;
-    transform: skew(0deg, -8deg);
-
+    display: flex;
+    justify-content: center;
 }
 
-.card1 {
-    transform: skew(0deg, 8deg);
-    /* margin-top: -100px; */
-    /* position: absolute; */
-}
-
-.card2 {
-    transform: skew(0deg, 8deg);
-    /* margin-top: -300px; */
-    /* position: absolute; */
-    /* margin-right: 500px; */
+.cards {
+    display: inline-block;
+    /* transform: skew(0deg, 4deg); */
+    margin: -50px 20px 50px 20px;
 }
