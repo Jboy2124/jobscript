@@ -16,32 +16,32 @@ const TheDeveloper = () => {
         {/* {Datalist.map((items) => {
             return(<Cards title={items.title} description={items.description} portfolio={items.portfolio}/>)
         })} */}
-        <div class="card">
-          <img src={ES} height="280" class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title">Elizabeth Santos</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div className="card">
+          <img src={ES} height="280" className="card-img-top" alt="..."/>
+          <div className="card-body">
+            <h5 className="card-title">Elizabeth Santos</h5>
+            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <button type="button" onClick={() => {
               window.open("https://ecsantos1990.github.io/portfolio/", "");
-            }} class="btn btn-outline-danger">Portfolio</button>
+            }} className="btn btn-outline-danger">Portfolio</button>
           </div>
         </div>
-        <div class="card">
-          <img src={DHA} height="280" class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title">Dan Harry Apalis</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button" class="btn btn-outline-danger">Portfolio</button>
+        <div className="card">
+          <img src={DHA} height="280" className="card-img-top" alt="..."/>
+          <div className="card-body">
+            <h5 className="card-title">Dan Harry Apalis</h5>
+            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" className="btn btn-outline-danger">Portfolio</button>
           </div>
         </div>
-        <div class="card">
-          <img src={JBA} height="280" class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title">Jufel Abecia</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div className="card">
+          <img src={JBA} height="280" className="card-img-top" alt="..."/>
+          <div className="card-body">
+            <h5 className="card-title">Jufel Abecia</h5>
+            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <button type="button" onClick={() => {
               window.open("https://jufel-portfolio.herokuapp.com/#home","");
-            }} class="btn btn-outline-danger">Portfolio</button>
+            }} className="btn btn-outline-danger">Portfolio</button>
           </div>
         </div>
       </div>
