@@ -1,11 +1,11 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
-import JobSeeker from '../images/home-images/hero-img-1.jpg'
-import Employer from '../images/home-images/hero-img-2.jpg'
-import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material';
+// import JobSeeker from '../images/home-images/hero-img-1.jpg'
+// import Employer from '../images/home-images/hero-img-2.jpg'
+// import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material';
 import Displaycard from '../components/Displaycard';
 import CardData from '../data-model/DataList';
-
+import HeroBanner from '../components/HeroBanner'
 
 let contentForCard = CardData.map((items) => {
   return <Displaycard title={items.title} description={items.description}/>
@@ -13,8 +13,9 @@ let contentForCard = CardData.map((items) => {
 
 const Home = () => {
   return (
-    <div className='home-container'>
-      <Grid className='grid' container>
+    <div className='container'>
+      <HeroBanner />
+      {/* <Grid className='grid' container>
         <Grid className='hero-text' item xs={12} sm={6}>
           <p>Job Opportunities.</p>
           <p>Outstanding Developers.</p>
@@ -40,7 +41,7 @@ const Home = () => {
         
 
 
-      </Grid>
+      </Grid> */}
 
     </div>
   )
