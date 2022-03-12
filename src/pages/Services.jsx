@@ -2,7 +2,6 @@ import React from 'react'
 import img2 from '../images/home-images/Employer.jpg'
 import img3 from '../images/home-images/JobSeeker.jpg'
 
-
 import {makeStyles} from "@mui/styles";
 
 

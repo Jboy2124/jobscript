@@ -15,6 +15,8 @@ const HeroBanner = () => {
     const classes = useStyles();
   
   return (
+
+    <div className='container'> 
     <div className='container pt-5'> 
         <div className="row pt-5 mt-5">
             <div className="col-md-6 col-xs-5">
