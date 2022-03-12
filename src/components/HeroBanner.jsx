@@ -34,7 +34,7 @@ const HeroBanner = () => {
             </div>
             </div>   
         </div>
-
+    </div>
   )
 }
 
