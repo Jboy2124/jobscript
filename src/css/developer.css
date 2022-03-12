@@ -1,20 +1,34 @@
+* {
+    font-size: 14px;
+}
 #card-container {
     height: 90vh;
-    background-color: skyblue ;
-}
-
-#lower-container {
-    height: 40vh;
-    background-color:cadetblue;
-    text-align: center;
+    /* background-color: skyblue ; */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    width: 18rem;
+    width: 20rem;
+    box-shadow: 0px 0px 15px 1px;
+    border-radius: 5px;
 
 }
 
-.dev-cards {
-    display: inline-block;
-    /* margin: 10px; */
+#dev-cards {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
 }
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+    #card-container {
+        height: 100%;
+    }
+
+    #dev-cards {
+        margin-top: 20px;
+    }
+}   
