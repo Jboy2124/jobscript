@@ -1,33 +1,33 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* NAVBAR COMPONENTS */
 .links {
-    color: #e63c3c;
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: none;
-    margin-left: 20px;
-    position: relative;
+  color: #e63c3c;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
 }
 
 .links::after {
-    content: "";
-    width: 0;
-    height: 2.5px;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #e63c3c;
-    transition: width 0.3s;
+  content: "";
+  width: 0;
+  height: 2.5px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e63c3c;
+  transition: width 0.3s;
 }
 
 .links:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .links:hover {
-    color: #e63c3c;
+  color: #e63c3c;
 }
