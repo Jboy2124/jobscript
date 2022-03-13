@@ -16,7 +16,7 @@ const Displaycard = (props) => {
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>
             <p className="card-text">{props.description}</p>
-            <button type="button" onClick={viewPortfolio}  className="btn btn-outline-danger">Show more</button>
+            <button type="button" onClick={viewPortfolio}  className="btn btn-outline-danger">Portfolio</button>
           </div>
         </div>
       </div>
