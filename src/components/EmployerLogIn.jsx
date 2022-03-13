@@ -26,7 +26,7 @@ const EmployerLogIn = () => {
 		 {
 		 	if ((input[0].value == existingUser.username ) && (input[1].value == existingUser.password))
 		 	 {
-		 	 	form.onsubmit = ()=>{return 1;}
+		 	 	form.onSubmit = ()=>{return 1;}
 				  document.cookie = "username="+input[0].value;
 				  document.cookie = "password="+input[1].value;
 		 	 }
