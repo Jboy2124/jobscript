@@ -105,4 +105,10 @@ span {
 @media (max-width: 768px) {
 }
 @media (max-width: 425px) {
+  .containerSignUp form {
+    width: 80%;
+  }
+  .signUpContainer h1 {
+    font-size: 25px;
+  }
 }
