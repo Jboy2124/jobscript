@@ -51,12 +51,12 @@ const Services = () => {
                 
                 </div>
                 <div className="col-md-6 col-xs-5">
-                    <img className="w-100 h-100" src={img2}></img>
+                    <img className="w-100 h-100" src={img2} alt="put some text here"></img>
                 </div>
             </div>   
             <div className="row pt-5 border">
                 <div className="col-md-6 col-xs-5">
-                    <img className="w-100 h-100" src={img3}></img>
+                    <img className="w-100 h-100" src={img3} alt="put some text here"></img>
                 </div>
                 <div className="col-md-6 col-xs-5">
                 <p className={classes.subtopic}>OFFERING  </p>
