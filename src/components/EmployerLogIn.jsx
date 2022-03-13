@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react'
 import "../css/jobseeker.css"
-import { BrowserRouter as Route, Link} from "react-router-dom";
-import JobSeekerDash from "../components/JobSeekerDash";
-import { useHistory } from 'react-router-dom';
-
+import { Link } from 'react-router-dom'
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const EmployerLogIn = () => {
     useEffect(() => {

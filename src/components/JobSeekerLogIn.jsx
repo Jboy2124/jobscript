@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import "../css/jobseeker.css"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import JobSeekerDash from '../components/JobSeekerDash'
+import { BrowserRouter as Link } from "react-router-dom";
+
 
 
 const JobSeekerLogIn = () => {
@@ -29,9 +29,9 @@ const JobSeekerLogIn = () => {
         // console.log(existingUser)
 
 
-		if ((input[0].value != "") && (input[1].value != ""))
+		if ((input[0].value !== "") && (input[1].value !== ""))
 		 {
-		 	if ((input[0].value == existingUser.username ) && (input[1].value == existingUser.password))
+		 	if ((input[0].value === existingUser.username ) && (input[1].value === existingUser.password))
 		 	 {
 		 	 	form.onSubmit = ()=>{return 1;}
 				  document.cookie = "username="+input[0].value;
@@ -39,7 +39,7 @@ const JobSeekerLogIn = () => {
 		 	 }
 		 	 else
 		 	 {
-		 	 	if ((input[0].value != existingUser.username) )
+		 	 	if ((input[0].value !== existingUser.username) )
 			 	 {
 			 	 	input[0].nextElementSibling.textContent = "Username NOT match";
 					setTimeout(()=>{
@@ -47,28 +47,25 @@ const JobSeekerLogIn = () => {
 					}, 2000);
 
 			 	 }
-			 	 if ((input[1].value != existingUser.password) )
+			 	 if ((input[1].value !== existingUser.password) )
 			 	 {
 			 	 	input[1].nextElementSibling.textContent = "Password NOT match";
 					setTimeout(()=>{
 						input[1].nextElementSibling.textContent = "";
 					}, 2000);
-
 			 	 }
-
 		 	 }
-
 		 }
 		else
 		 {
-			if (input[0].value == "")
+			if (input[0].value === "")
 			{
 				input[0].nextElementSibling.textContent = "Username is empty";
 				setTimeout(()=>{
 					input[0].nextElementSibling.textContent = "";
 				}, 2000);
 			}
-			if (input[1].value == "")
+			if (input[1].value === "")
 			{
 				input[1].nextElementSibling.textContent = "Password is empty";
 				setTimeout(()=>{
@@ -82,7 +79,7 @@ const JobSeekerLogIn = () => {
     <div className="logo">
         <div id="logo">
             <Link to="/Employer">
-                <i className="fa fa-users"></i> <a>Employer Log-In</a>
+                <i className="fa fa-users"></i><a href= "www.google.com">Employer Log-In</a>
             </Link>
         </div>
         <form onSubmit={login}>
@@ -99,9 +96,9 @@ const JobSeekerLogIn = () => {
             <button id="log-in" > Log-in</button>
             <div className="signUp"><p>New User?
                 <Link to="/JobSeekerSignUp">
-                    <a className="signUp"> Sign up FREE Now</a>
+                    <a href="www.google.com" className="signUp"> Sign up FREE Now</a>
                 </Link> </p></div>
-            <div className="terms"><p>This site is protected by reCAPTCHA and JobScript <a href="#">Terms of Use</a> and  <a href="#">Privacy Policy</a> apply. </p></div>
+            <div className="terms"><p>This site is protected by reCAPTCHA and JobScript <a href="www.google.com">Terms of Use</a> and  <a href="www.google.com">Privacy Policy</a> apply. </p></div>
         </form>
 
     </div>

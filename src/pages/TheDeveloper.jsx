@@ -2,10 +2,11 @@ import React from 'react'
 import '../css/developer.css'
 import Cards from '../components/Displaycard'
 import Datalist from '../data-model/DataList'
+import Footer from '../components/Footer'
 
 const TheDeveloper = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
       <div id='card-container' className='container'>
         <div className="row">
           {Datalist.map((items) => {
@@ -13,10 +14,14 @@ const TheDeveloper = () => {
           })}
         </div>
       </div>
-      <div id='team-footer' className="row"></div>
-      <div id='meetTheTeamFooter' className="row"></div>
+      {/* <div id='team-footer' className="row"></div> */}
+      {/* <div id='meetTheTeamFooter' className="row"></div> */}
+
+      <div className="container-fluid p-0">
+        <Footer />
+      </div>
+
     </div>
-    
   )
 }
 

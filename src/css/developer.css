@@ -2,16 +2,16 @@
     font-size: 14px;
 }
 #card-container {
-    height: 90vh;
+    height: 100vh;
     /* background-color: skyblue ; */
     display: flex; 
     justify-content: center;
     align-items: center;
 }
 
-.card {
+#developer-card {
     width: 21rem;
-    box-shadow: 5px 5px 10px 1px;
+    /* box-shadow: 3px 3px 3px 1px lightgray; */
     border-radius: 5px;
 }
 
