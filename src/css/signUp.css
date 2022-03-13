@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@800&family=Smooch+Sans:wght@700&display=swap");
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+} */
+.containerSignUp {
+  height: 90vh;
+  width: 100%;
+  background-color: transparent;
+}
+.containerSignUp::before,
+.containerSignUp::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.containerSignUp::before {
+  clip-path: circle(30% at right 20%);
+  background-color: #e63c3c;
+  z-index: -1;
+}
+.containerSignUp::after {
+  clip-path: circle(25% at left 80%);
+  background-color: #e63c3c;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.containerSignUp form {
+  border-radius: 12px;
+  width: 35%;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  top: 30px;
+}
+
+.signUpContainer h1 {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.signUpContainer input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  background-color: White;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.register {
+  margin-top: 20px;
+  outline: none;
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: #e63c3c;
+  width: 100%;
+}
+.signUpContainer p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+.signUpContainer a {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+.signUpContainer a:hover {
+  text-decoration: underline;
+}
+
+span {
+  display: block;
+  margin-left: 20px;
+  color: red;
+  font-style: italic;
+}
+
+.signUpContainer .signUpTerms {
+  color: grey;
+  font-size: small;
+  text-align: left;
+}
+.signUpTerms a {
+  color: grey;
+  font-size: small;
+  text-align: left;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+  .containerSignUp form {
+    width: 80%;
+  }
+  .signUpContainer h1 {
+    font-size: 25px;
+  }
+}

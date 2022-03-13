@@ -93,11 +93,7 @@ const JobSeekerLogIn = () => {
                 <input type="password" name="password" placeholder="Enter Password"></input>
                 <span></span>
             </div>
-            <button id="log-in" >
-            <Link to="/JobSeekerDash">
-                Log-in
-            </Link>
-            </button>
+            <button id="log-in" > Log-in</button>
             <div className="signUp"><p>New User?
                 <Link to="/JobSeekerSignUp">
                     <a href="www.google.com" className="signUp"> Sign up FREE Now</a>
