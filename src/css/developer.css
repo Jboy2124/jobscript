@@ -2,7 +2,7 @@
     font-size: 14px;
 }
 #card-container {
-    height: 90vh;
+    height: 100vh;
     /* background-color: skyblue ; */
     display: flex; 
     justify-content: center;
