@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import "../css/jobseeker.css"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const EmployerLogIn = () => {
     useEffect(() => {
@@ -26,7 +27,7 @@ const EmployerLogIn = () => {
 		 {
 		 	if ((input[0].value == existingUser.username ) && (input[1].value == existingUser.password))
 		 	 {
-		 	 	form.onSubmit = ()=>{return 1;}
+		 	 	form.onsubmit = ()=>{return 1;}
 				  document.cookie = "username="+input[0].value;
 				  document.cookie = "password="+input[1].value;
 		 	 }

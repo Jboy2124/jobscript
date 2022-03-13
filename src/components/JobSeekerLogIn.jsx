@@ -53,11 +53,8 @@ const JobSeekerLogIn = () => {
 					setTimeout(()=>{
 						input[1].nextElementSibling.textContent = "";
 					}, 2000);
-
 			 	 }
-
 		 	 }
-
 		 }
 		else
 		 {
