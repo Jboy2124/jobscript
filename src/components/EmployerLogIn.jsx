@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import "../css/jobseeker.css"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Route, Link} from "react-router-dom";
+import JobSeekerDash from "../components/JobSeekerDash";
+import { useHistory } from 'react-router-dom';
+
 
 const EmployerLogIn = () => {
     useEffect(() => {
@@ -9,13 +12,13 @@ const EmployerLogIn = () => {
             password: "javascript"
         }));
     });
+	
 
     
 	let input = document.getElementsByTagName('input');
 	let form = document.querySelector('form');
 
     const login = (e)=> {
-        console.log(e)
         e.preventDefault()
 
         const existingUser = JSON.parse(localStorage.getItem('admin'));
@@ -26,9 +29,8 @@ const EmployerLogIn = () => {
 		 {
 		 	if ((input[0].value == existingUser.username ) && (input[1].value == existingUser.password))
 		 	 {
-		 	 	form.onsubmit = ()=>{return 1;}
-				  document.cookie = "username="+input[0].value;
-				  document.cookie = "password="+input[1].value;
+				//history.push('/JobSeekerDash')
+				// alert("Log in Successfully")
 		 	 }
 		 	 else
 		 	 {
@@ -91,7 +93,7 @@ const EmployerLogIn = () => {
                 <input type="password" name="password" placeholder="Enter Password"></input>
                 <span></span>
             </div>
-            <button id="log-in">Log-in</button>
+			<button id="log-in">Log-in</button>
             <div className="signUp"><p>New User?
                 <Link to="/EmployerSignUp">
                     <a> Sign up FREE Now</a>

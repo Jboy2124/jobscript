@@ -10,12 +10,10 @@ import JobSeekerSignUp from "./components/JobSeekerSignUp";
 import EmployerLogIn from "./components/EmployerLogIn"
 import EmployerSignUp from "./components/EmployerSignUp";
 import JobSeekerDash from "./components/JobSeekerDash";
-import { useState } from "react";
 
 
 const App = () => {
-  const [token, setToken] = useState(true);
-  
+   
   return (
    <Router>
      <Navbar />
@@ -28,9 +26,7 @@ const App = () => {
         <Route exact path="/Jobseeker" element={<JobSeekerLogIn />}> </Route>
         <Route exact path="/EmployerSignUp" element={<EmployerSignUp />}></Route>
         <Route exact path="/JobseekerSignUp" element={<JobSeekerSignUp />}> </Route>
-        {token &&  <Route exact path="/JobSeekerDash" element={<JobSeekerDash />}> </Route>}
-
-
+        <Route exact path="/JobSeekerDash" > </Route>
      </Routes>
    </Router>
   )

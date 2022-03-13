@@ -33,7 +33,7 @@ const JobSeekerLogIn = () => {
 		 {
 		 	if ((input[0].value == existingUser.username ) && (input[1].value == existingUser.password))
 		 	 {
-		 	 	form.onsubmit = ()=>{return 1;}
+		 	 	form.onSubmit = ()=>{return 1;}
 				  document.cookie = "username="+input[0].value;
 				  document.cookie = "password="+input[1].value;
 		 	 }
@@ -96,11 +96,7 @@ const JobSeekerLogIn = () => {
                 <input type="password" name="password" placeholder="Enter Password"></input>
                 <span></span>
             </div>
-            <button id="log-in" >
-            <Link to="/JobSeekerDash">
-                Log-in
-            </Link>
-            </button>
+            <button id="log-in" > Log-in</button>
             <div className="signUp"><p>New User?
                 <Link to="/JobSeekerSignUp">
                     <a className="signUp"> Sign up FREE Now</a>
