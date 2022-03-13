@@ -6,13 +6,14 @@ import TestimonialsCard from './TestimonialsCard'
 
 const Testimonials = () => {
   return (
-    <div className='container'>
+    <div id='services-testimonial' className='container'>
+      <h4 className='text-center py-5'>Testimonials</h4>
         <div className="row">
         { 
             JobSeekerTestimonials.map((items) => {
               return(
-                <div className="col">
-                  <TestimonialsCard testimonial={items.testimonial} name={items.name} img={items.imgPath} />
+                <div className="col pb-5">
+                  <TestimonialsCard testimonial={items.testimonial} type={items.type} name={items.name} img={items.imgPath} />
                 </div>
               )
             })
@@ -23,8 +24,8 @@ const Testimonials = () => {
           {
             EmployerTestimonials.map((items) => {
               return (
-                <div className="col">
-                  <TestimonialsCard testimonial={items.testimonial} name={items.name} img={items.imgPath}/>
+                <div className="col pb-5">
+                  <TestimonialsCard testimonial={items.testimonial} type={items.type} name={items.name} img={items.imgPath}/>
                 </div>
               )
             })

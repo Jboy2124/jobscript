@@ -11,7 +11,7 @@ const Displaycard = (props) => {
   return (
     <div className="container">
       <div className='row'>
-        <div className="card">
+        <div id='developer-card' className="card">
           <img src={props.imgPath} height="280" alt="No image" className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>

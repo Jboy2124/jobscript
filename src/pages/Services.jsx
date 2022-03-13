@@ -1,6 +1,7 @@
 import React from 'react'
 import img2 from '../images/home-images/Employer.jpg'
 import img3 from '../images/home-images/JobSeeker.jpg'
+import '../css/testimonials.css'
 
 import {makeStyles} from "@mui/styles";
 import Testimonials from '../components/Testimonials';
@@ -61,7 +62,13 @@ const Services = () => {
                 <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
             </div>
         </div>
-        <Testimonials />
+        <div className="container">
+            <div  className='row'>
+                <div className="col">
+                    <Testimonials />
+                </div>
+            </div>
+        </div>
     </div>
   )
 }

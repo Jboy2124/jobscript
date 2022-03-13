@@ -1,8 +1,11 @@
 import React from 'react'
+import ContactUs from '../components/ContactUs'
 
 const Connect = () => {
   return (
-    <div>Connect</div>
+    <div className='container'>
+      <ContactUs />
+    </div>
   )
 }
 
