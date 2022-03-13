@@ -1,65 +1,61 @@
-#top-footer {
-    /* height: 40%; */
-    /* display: flex; */
-}
-
-#tel-logo, #select-country{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-right: 0px;
+#tel-logo,
+#select-country {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 0px;
 }
 #footer-icons {
-    height: 30px;
-    width: 30px;
-    /* background-color: aqua; */
+  height: 30px;
+  width: 30px;
+  /* background-color: aqua; */
 }
 
 #social-media {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 #social-media #twitter {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 #middle-footer {
-    background-color: #e63c3c;
-    padding-bottom: 20px;
+  background-color: #e63c3c;
+  padding-bottom: 20px;
 }
 
 #footer-columns h5 {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    color: white;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: white;
 }
 
 #footer-columns p {
-    margin: 0px;
+  margin: 0px;
 }
 
-#footer-columns p a{
-    font-size: 12px;
-    margin: 0px;
-    color: white;
-    text-decoration: none;
+#footer-columns p a {
+  font-size: 12px;
+  margin: 0px;
+  color: white;
+  text-decoration: none;
 }
 
 #footer-columns p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #copyright-footer {
-    text-align: center;
-    background-color: #e63c3c;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  text-align: center;
+  background-color: #e63c3c;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
