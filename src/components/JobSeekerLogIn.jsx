@@ -1,10 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../css/jobseeker.css"
 import { Link } from "react-router-dom";
+import JobSeekerDash from './JobSeekerDash'
 
 
 
 const JobSeekerLogIn = () => {
+    // window.onload = ()=>{
+	// 	this.sessionStorage.setItem('username', 'ecsantos');
+	// 	this.sessionStorage.setItem('password', 'javascript');
+	// }
+	const [returnValue, setReturnValue] = useState(false);
+
     useEffect(() => {
         localStorage.setItem('user', JSON.stringify({
             username:"ECSantos",
@@ -15,23 +22,23 @@ const JobSeekerLogIn = () => {
     
 	let input = document.getElementsByTagName('input');
 	let form = document.querySelector('form');
-	// form.onsubmit = ()=>{return false;}
+	
+	if(returnValue){
+		return <JobSeekerDash/>
+	}
+    
 
 	const login = (e)=> {
         console.log(e)
         e.preventDefault()
 
         const existingUser = JSON.parse(localStorage.getItem('user'));
-        // console.log(existingUser)
-
-
+ 
 		if ((input[0].value !== "") && (input[1].value !== ""))
 		 {
 		 	if ((input[0].value === existingUser.username ) && (input[1].value === existingUser.password))
 		 	 {
-		 	 	form.onSubmit = ()=>{return 1;}
-				  document.cookie = "username="+input[0].value;
-				  document.cookie = "password="+input[1].value;
+				  setReturnValue(true)
 		 	 }
 		 	 else
 		 	 {
@@ -75,7 +82,7 @@ const JobSeekerLogIn = () => {
     <div className="logo">
         <div id="logo">
             <Link to="/Employer">
-                <i className="fa fa-users"></i><a href= "www.google.com">Employer Log-In</a>
+                <i className="fa fa-users"></i><a>Employer Log-In</a>
             </Link>
         </div>
         <form onSubmit={login}>

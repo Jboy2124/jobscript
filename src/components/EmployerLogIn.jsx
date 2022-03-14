@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import "../css/jobseeker.css"
 import { Link } from 'react-router-dom'
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import JobSeekerDash from '../components/JobSeekerDash'
+import JobSeekerDash from './JobSeekerDash'
 
 
 
 const EmployerLogIn = () => {
-    const [returnValue, setReturnValue] = useState(false);
-	
+	const [returnValue, setReturnValue] = useState(false);
+
 	useEffect(() => {
         localStorage.setItem('admin', JSON.stringify({
             username:"PakopyaNiEdgar",
@@ -22,6 +21,8 @@ const EmployerLogIn = () => {
     
 	let input = document.getElementsByTagName('input');
 	let form = document.querySelector('form');
+	
+
 
 
     const login = (e)=> {
@@ -35,7 +36,7 @@ const EmployerLogIn = () => {
 		 {
 		 	if ((input[0].value == existingUser.username ) && (input[1].value == existingUser.password))
 		 	 {
-				setReturnValue(true);
+				setReturnValue(true)
 		 	 }
 		 	 else
 		 	 {
