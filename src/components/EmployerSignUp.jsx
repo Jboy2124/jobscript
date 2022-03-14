@@ -2,9 +2,11 @@ import React from 'react'
 import "../css/signUp.css"
 import { Link } from "react-router-dom";
 import { useRef,  useState, useEffect} from 'react'
+import EmployerDash from '../components/EmployerDash';
 
 
 const EmployerSignUp = () => {  
+  const [returnValue, setReturnValue] = useState(false);
   const [id, setId] = useState(Date.now())
   const personNameRef = useRef(null);
   const businessNameRef = useRef(null);
@@ -13,6 +15,14 @@ const EmployerSignUp = () => {
   const passwordRef = useRef(null);
   const [regEmployer, setContactList] = useState([]);
 
+  useEffect(() => {
+    localStorage.setItem('RegisterEmployerDetails',JSON.stringify(regEmployer))
+  }, [regEmployer])
+
+  if(returnValue){
+    return <EmployerDash/>
+  }
+  
   let handleSubmit = (e) => {
       e.preventDefault();
       const contactObject = {
@@ -32,13 +42,9 @@ const EmployerSignUp = () => {
       setId(Date.now());
       
       alert("Registration Sucessfull")
+      setReturnValue(true)
   }
-  useEffect(() => {
-    localStorage.setItem('RegisterEmployerDetails',JSON.stringify(regEmployer))
-}, [regEmployer])
-
-
-
+ 
   return (
     <div className="containerSignUp">
         <form onSubmit={handleSubmit} className="employer" >
@@ -49,7 +55,7 @@ const EmployerSignUp = () => {
                 <input type="text" name="password" required placeholder="Registered Business Name" ref={businessNameRef}/><br/>  <br/> 
                 <input type="number" name="number" required placeholder="Mobile Number" ref={numberRef}/><br/>  <br/> 
                 <input type="text" name="email" required placeholder="Email Address" ref={emailRef}/><br/>  <br/> 
-                <input type="text" name="password"  required placeholder="Password" ref={passwordRef}/><br/> <br/> 
+                <input type="text" name="password"  required placeholder="Password" ref={passwordRef}/><br/>
                 <button className='register' type="submit">Register</button> <br/><br/>
                 <p>Existing User? <Link to="/Employer" > <a>Log in HERE</a> </Link></p>              
                 <p className='signUpTerms'>By continuing, you acknowledge that you accept JobScript's  <a href="#">Privacy Policies</a> and  <a href="#">Terms and Conditions. </a> </p>

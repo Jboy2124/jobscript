@@ -1,20 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../css/jobseeker.css"
 import { Link } from 'react-router-dom'
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import JobSeekerDash from './JobSeekerDash'
+
+
 
 const EmployerLogIn = () => {
-    useEffect(() => {
+	const [returnValue, setReturnValue] = useState(false);
+
+	useEffect(() => {
         localStorage.setItem('admin', JSON.stringify({
             username:"PakopyaNiEdgar",
             password: "javascript"
         }));
     });
 	
-
+	if(returnValue){
+		return <JobSeekerDash/>
+	}
     
 	let input = document.getElementsByTagName('input');
 	let form = document.querySelector('form');
+	
+
 
     const login = (e)=> {
         e.preventDefault()
@@ -27,8 +35,7 @@ const EmployerLogIn = () => {
 		 {
 		 	if ((input[0].value == existingUser.username ) && (input[1].value == existingUser.password))
 		 	 {
-				//history.push('/JobSeekerDash')
-				// alert("Log in Successfully")
+				setReturnValue(true)
 		 	 }
 		 	 else
 		 	 {
