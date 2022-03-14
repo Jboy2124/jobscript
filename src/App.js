@@ -26,7 +26,7 @@ const App = () => {
         <Route exact path="/Jobseeker" element={<JobSeekerLogIn />}> </Route>
         <Route exact path="/EmployerSignUp" element={<EmployerSignUp />}></Route>
         <Route exact path="/JobseekerSignUp" element={<JobSeekerSignUp />}> </Route>
-        <Route exact path="/JobSeekerDash" > </Route>
+        <Route exact path="/JobSeekerDash"   element={<JobSeekerDash />}> </Route>
      </Routes>
    </Router>
   )

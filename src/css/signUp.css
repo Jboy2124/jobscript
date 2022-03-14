@@ -45,6 +45,28 @@
   text-align: center;
   letter-spacing: 2px;
 }
+
+.signUpContainerTwo h1 {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.jobSignUp {
+  background-color: rgb(242, 242, 59);
+}
+
+.signUpContainerTwo input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  background-color: beige;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
 .signUpContainer input {
   height: 35px;
   width: 100%;
@@ -75,7 +97,19 @@
   color: black;
   font-size: 14px;
 }
+
+.signUpContainerTwo p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
 .signUpContainer a {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+.signUpContainerTwo a {
   color: black;
   font-weight: bold;
   font-size: 16px;
@@ -84,12 +118,8 @@
 .signUpContainer a:hover {
   text-decoration: underline;
 }
-
-span {
-  display: block;
-  margin-left: 20px;
-  color: red;
-  font-style: italic;
+.signUpContainerTwo a:hover {
+  text-decoration: underline;
 }
 
 .signUpContainer .signUpTerms {
@@ -97,18 +127,50 @@ span {
   font-size: small;
   text-align: left;
 }
+.signUpContainerTwo .signUpTerms {
+  color: grey;
+  font-size: small;
+  text-align: left;
+}
+
 .signUpTerms a {
   color: grey;
   font-size: small;
   text-align: left;
 }
 @media (max-width: 768px) {
+  .containerSignUp form {
+    width: 60%;
+    top: 80px;
+  }
 }
 @media (max-width: 425px) {
   .containerSignUp form {
     width: 80%;
+    padding: 10px;
+    top: 5px;
   }
   .signUpContainer h1 {
     font-size: 25px;
+  }
+  .signUpContainerTwo h1 {
+    font-size: 25px;
+  }
+  .signUpContainer p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .signUpContainerTwo p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .signUpContainer .signUpTerms {
+    font-size: smaller;
+  }
+  .signUpContainerTwo .signUpTerms {
+    font-size: smaller;
+  }
+  .signUpTerms a {
+    font-size: smaller;
   }
 }
