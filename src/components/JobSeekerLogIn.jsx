@@ -1,14 +1,10 @@
 import React, { useEffect } from 'react'
 import "../css/jobseeker.css"
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
 const JobSeekerLogIn = () => {
-    // window.onload = ()=>{
-	// 	this.sessionStorage.setItem('username', 'ecsantos');
-	// 	this.sessionStorage.setItem('password', 'javascript');
-	// }
     useEffect(() => {
         localStorage.setItem('user', JSON.stringify({
             username:"ECSantos",

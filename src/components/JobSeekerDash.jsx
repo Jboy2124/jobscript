@@ -2,8 +2,11 @@ import React from 'react'
 
 const JobSeekerDash = () => {
   return (
-    <div>
-        <h1>JobSeekerDash</h1>
+    <div className='container-fluid'>
+      <div className="container">
+        <h1>adbakhdsgahjsdgahsdghasdgahjsgdhagd</h1>
+      </div>
+        
     </div>
   )
 }

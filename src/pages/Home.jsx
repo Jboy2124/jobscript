@@ -1,11 +1,5 @@
 import React from 'react'
 
-// import JobSeeker from '../images/home-images/hero-img-1.jpg'
-// import Employer from '../images/home-images/hero-img-2.jpg'
-// import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material';
-
-import Grid from '@mui/material/Grid';
-
 import Displaycard from '../components/Displaycard';
 import CardData from '../data-model/DataList';
 import HeroBanner from '../components/HeroBanner'
