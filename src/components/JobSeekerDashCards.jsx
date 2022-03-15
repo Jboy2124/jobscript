@@ -1,9 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/jobseekerdash.css'
 
-
 const JobSeekerDashCards = (props) => {
-
     let handleExpandJobList = () => {
         props.handlesJobClickEvent(props.id);
     }

@@ -21,7 +21,9 @@
 
 #jobseeker-card-header {
     text-align: end;
-    color: #e63c3c;
+    color: white;
+    background-color:#e63c3c;
+    opacity: 0.6;
     font-size: 12px;
     border-top-left-radius: 2em;
 }
@@ -51,9 +53,11 @@
 }
 #jobseeker-card:hover > #jobseeker-card-header {
     background-color: #e63c3c;
-    transition: 0.5s ease-in-out;
+    opacity: 100%;
+    transition: 0.4s ease-in-out;
     color: white;
 }
+
 
 
 #jobseeker-card:hover {
