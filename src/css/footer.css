@@ -59,3 +59,55 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.footerIcons i {
+  font-size: 25px;
+  color: #e63c3c;
+  cursor: pointer;
+}
+.footerIcons i:hover {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  #footerDisplay {
+    display: none;
+  }
+  .accordion {
+    display: block;
+  }
+  .accordion-body,
+  .accordion-button {
+    font-size: 15px;
+    color: white;
+    background-color: #e63c3c;
+  }
+  .accordion-button {
+    font-size: 18px;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #e63c3c;
+    color: white;
+  }
+  .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+}
+@media (max-width: 425px) {
+  #footerDisplay {
+    display: none;
+  }
+  .flexColumn {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1023px) {
+  #footerDisplay {
+    display: block;
+  }
+  .accordion {
+    display: none;
+  }
+}
