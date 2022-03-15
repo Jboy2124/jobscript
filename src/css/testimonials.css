@@ -1,3 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.container-fluid {
+  font-family: "Roboto", sans-serif;
+}
+.serviceHeading {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.containerInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.containerForServices {
+  width: 50%;
+  margin: auto;
+}
+
+.serviceTopicEmployer,
+.serviceTopicEmployerRight {
+  color: #e63c3c;
+  font-size: 30px;
+  letter-spacing: 7px;
+}
+.serviceTopic,
+.serviceTopicRight {
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.serviceTopicRight,
+.descriptionRight,
+.serviceTopicEmployerRight {
+  text-align: right;
+}
+
+.description,
+.descriptionRight {
+  color: grey;
+}
+
+@media (max-width: 768px) {
+  .containerInner {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .containerInner {
+    width: 90%;
+    flex-direction: column;
+  }
+  .containerForServices {
+    width: 90%;
+  }
+}
+
 #testimonials-card-text {
   font-size: 12px;
   font-style: italic;
@@ -44,3 +106,7 @@
         justify-content: center;
     }
 }    */
+
+.serviceTopic {
+  font-size: 25px;
+}
