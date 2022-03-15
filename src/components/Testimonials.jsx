@@ -7,7 +7,7 @@ import TestimonialsCard from './TestimonialsCard'
 const Testimonials = () => {
   return (
     <div id='services-testimonial' className='container'>
-      <h4 className='text-center py-5'>Testimonials</h4>
+      <h2 className="serviceHeading">Testimonials</h2><br/><br/>
         <div className="row">
         { 
             JobSeekerTestimonials.map((items) => {
@@ -19,7 +19,6 @@ const Testimonials = () => {
             })
         }
         </div>
-
         <div className="row">
           {
             EmployerTestimonials.map((items) => {

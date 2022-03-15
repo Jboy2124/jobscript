@@ -6,19 +6,8 @@ import JobSeekerDash from './JobSeekerDash'
 
 
 const JobSeekerLogIn = () => {
-    // window.onload = ()=>{
-	// 	this.sessionStorage.setItem('username', 'ecsantos');
-	// 	this.sessionStorage.setItem('password', 'javascript');
-	// }
+   
 	const [returnValue, setReturnValue] = useState(false);
-
-    useEffect(() => {
-        localStorage.setItem('user', JSON.stringify({
-            username:"ECSantos",
-            password: "javascript"
-        }));
-    });
-
     
 	let input = document.getElementsByTagName('input');
 	let form = document.querySelector('form');
@@ -27,16 +16,22 @@ const JobSeekerLogIn = () => {
 		return <JobSeekerDash/>
 	}
     
-
 	const login = (e)=> {
         console.log(e)
         e.preventDefault()
 
-        const existingUser = JSON.parse(localStorage.getItem('user'));
- 
+        const existingUser = JSON.parse(localStorage.getItem('RegisterJobSeekerDetails'));
+
+		let username = "";
+		let password = "";
+		for (const key in existingUser) {
+			username = existingUser[key].email;
+			password = existingUser[key].password;
+		}
+
 		if ((input[0].value !== "") && (input[1].value !== ""))
 		 {
-		 	if ((input[0].value === existingUser.username ) && (input[1].value === existingUser.password))
+		 	if ((input[0].value === username ) && (input[1].value === password))
 		 	 {
 				  setReturnValue(true)
 		 	 }
