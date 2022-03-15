@@ -2,7 +2,7 @@ import React from 'react'
 import "../css/signUp.css"
 import { Link } from "react-router-dom";
 import { useRef,  useState, useEffect} from 'react'
-import JobSeekerDash from '../components/JobSeekerDash';
+import JobSeekerLogIn from './JobSeekerLogIn';
 
 
 const JobSeekerSignUp = () => {  
@@ -19,7 +19,7 @@ const JobSeekerSignUp = () => {
   }, [regJobSeeker])
 
   if(returnValue){
-    return <JobSeekerDash/>
+    return <JobSeekerLogIn/>
   }
   
   let handleSubmit = (e) => {

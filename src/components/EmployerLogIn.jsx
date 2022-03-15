@@ -1,39 +1,35 @@
 import React, { useEffect, useState } from 'react'
 import "../css/jobseeker.css"
 import { Link } from 'react-router-dom'
-import JobSeekerDash from './JobSeekerDash'
+import EmployerDash from './EmployerDash'
 
 
 
 const EmployerLogIn = () => {
 	const [returnValue, setReturnValue] = useState(false);
 
-	useEffect(() => {
-        localStorage.setItem('admin', JSON.stringify({
-            username:"PakopyaNiEdgar",
-            password: "javascript"
-        }));
-    });
-	
 	if(returnValue){
-		return <JobSeekerDash/>
+		return <EmployerDash/>
 	}
     
 	let input = document.getElementsByTagName('input');
 	let form = document.querySelector('form');
 	
-
-
     const login = (e)=> {
         e.preventDefault()
 
-        const existingUser = JSON.parse(localStorage.getItem('admin'));
-        // console.log(existingUser)
+        const existingUser = JSON.parse(localStorage.getItem('RegisterEmployerDetails'));
+		let username = "";
+		let password = "";
+		for (const key in existingUser) {
+			username = existingUser[key].email;
+			password = existingUser[key].password;
+		}
 
 
 		if ((input[0].value != "") && (input[1].value != ""))
 		 {
-		 	if ((input[0].value == existingUser.username ) && (input[1].value == existingUser.password))
+		 	if ((input[0].value == username ) && (input[1].value == password))
 		 	 {
 				setReturnValue(true)
 		 	 }
@@ -53,11 +49,8 @@ const EmployerLogIn = () => {
 					setTimeout(()=>{
 						input[1].nextElementSibling.textContent = "";
 					}, 2000);
-
 			 	 }
-
 		 	 }
-
 		 }
 		else
 		 {
