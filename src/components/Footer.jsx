@@ -5,6 +5,7 @@ import MailLogo from '../icons/mail.png'
 import YT from '../icons/youtube.png'
 import FB from '../icons/facebook.png'
 import Twit from '../icons/twitter.png'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -72,26 +73,30 @@ const Footer = () => {
                     </div>
                     <div id='footer-columns' className="col-sm-2">
                         <h5>JobScript</h5>
-                        <p><a href="#">About Us</a></p>
+                        <Link to="/AboutUs">
+                            <p><a href="#">About Us</a></p>
+                        </Link>
                         <p><a href="#">Contact Us</a></p>
                         <p><a href="#">Career with Us</a></p>
-                        <p><a href="#">Send Feedback</a></p>
+                        <Link to="/Feedback">
+                            <p><a href="#">Send Feedback</a></p>
+                        </Link>
                         <p><a href="#">Testimonials</a></p>
                     </div>
                     <div id='footer-columns' className="col-sm-2">
                         <h5>Stay Connected</h5>
-                        <p><a href="#">Facebook</a></p>
-                        <p><a href="#">Twitter</a></p>
-                        <p><a href="#">LinkedIn</a></p>
-                        <p><a href="#">Youtube</a></p>
+                        <p><a href="https://www.facebook.com/JobStreetPhilippines">Facebook</a></p>
+                        <p><a href="https://twitter.com/JobStreetPH">Twitter</a></p>
+                        <p><a href="https://www.linkedin.com/company/jobstreetph/">LinkedIn</a></p>
+                        <p><a href="https://www.youtube.com/user/JobStreetPhilippines">Youtube</a></p>
                         {/* <p><a href="#">Testimonials</a></p> */}
                     </div>
                     <div id='footer-columns' className="col-sm-2">
                         <h5>Legal</h5>
-                        <p><a href="#">Security and Fraud</a></p>
-                        <p><a href="#">Privacy Policy</a></p>
-                        <p><a href="#">Terms of Use</a></p>
-                        <p><a href="#">Complaints</a></p>
+                        <p><a href="https://acfe-p.org/index.html">Security and Fraud</a></p>
+                        <p><a href="https://www.privacy.gov.ph/">Privacy Policy</a></p>
+                        <p><a href="https://www.jobstreet.com/about-us/en-ph/terms-of-use/#bindingAgree">Terms of Use</a></p>
+                        <p><a href="https://www.privacy.gov.ph/complaints-main/">Complaints</a></p>
                     </div>
                 </div>
             </div>
