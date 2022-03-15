@@ -15,7 +15,6 @@ const EmployerLogIn = () => {
 	let input = document.getElementsByTagName('input');
 	let form = document.querySelector('form');
 	
-
     const login = (e)=> {
         e.preventDefault()
 
@@ -50,11 +49,8 @@ const EmployerLogIn = () => {
 					setTimeout(()=>{
 						input[1].nextElementSibling.textContent = "";
 					}, 2000);
-
 			 	 }
-
 		 	 }
-
 		 }
 		else
 		 {

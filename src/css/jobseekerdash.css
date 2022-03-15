@@ -1,0 +1,62 @@
+#header-filter {
+    background-color: whitesmoke;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#display-card-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* JOBSEEKER CARDS STYLE  */
+#card-display-container {
+    background-color: whitesmoke;
+}
+
+
+#jobseeker-card-header {
+    text-align: end;
+    color: #e63c3c;
+    font-size: 12px;
+    border-top-left-radius: 2em;
+}
+#jobseeker-card-title {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0px 20px 0px;
+}
+
+#jobseeker-card-snippets {
+    text-align: center;
+    font-size: 13px;
+}
+
+.btn-view-more-job{
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    padding: 2px 10px 10px 0;
+}
+
+
+#jobseeker-card {
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+    box-shadow: 2px 2px 10px #e1e1e1;
+}
+#jobseeker-card:hover > #jobseeker-card-header {
+    background-color: #e63c3c;
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+
+
+#jobseeker-card:hover {
+    box-shadow: 7px 7px 10px 1px lightgray;
+    transition: 0.3s ease-in-out;
+}
