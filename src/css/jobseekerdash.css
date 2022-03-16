@@ -1,7 +1,8 @@
 #header-filter {
     background-color: whitesmoke;
-    height: 50px;
+    height: 100px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -12,11 +13,29 @@
     padding: 20px;
 }
 
+.search-container {
+    width: 500px;
+    height: 50px;
+    margin: 20px 0px 0px 0px;
+    /* background-color: white; */
+}
+
+.search-jobs {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 20px;
+}
+
+#search-job-text {
+    height: 35px;
+    font-size: 13px;
+}
 
 /* JOBSEEKER CARDS STYLE  */
-#card-display-container {
+/* #card-display-container {
     background-color: whitesmoke;
-}
+} */
 
 
 #jobseeker-card-header {
@@ -106,3 +125,4 @@
 .modal-requirements li{
     font-size: 12px;
 }
+
