@@ -2,14 +2,14 @@ import React from 'react'
 import '../css/employerDash.css'
 
 
-const JobSeekerDashCards = (props) => {
+const EmployerDashCards = (props) => {
 
     let handleExpandJobList = () => {
-        props.handlesJobClickEvent(props.id);
+        props.handlesJobClickEvent(props.id,props.showData);
     }
   return (
     <div id='jobseeker-card' className='card' style={{ width: "20rem", height: "24rem" }}>
-        <div id='jobseeker-card-header' className='card-header'>{props.category}</div>
+        <div id='employer-card-header' className='card-header'>{props.category}</div>
         <div className="card-body">
             <img className="devImg" src={props.devImg}></img>
             <h5 id='dev-card-title' className="card-title">{props.title}</h5>
@@ -28,4 +28,4 @@ const JobSeekerDashCards = (props) => {
   )
 }
 
-export default JobSeekerDashCards
+export default EmployerDashCards

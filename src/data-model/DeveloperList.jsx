@@ -27,7 +27,7 @@ const DeveloperList = [
         devLocation: "Poblacion, Pasig 5253 PH",
         devMainRole: "Visual Designers",
         skillSet: "Part Time",
-        skillSet2: "After Effects",
+        skillSet2: "Effects",
         skillSet3: "HTML"
     },
     {
@@ -43,8 +43,8 @@ const DeveloperList = [
     {
         id: 5,
         devImg: "https://snipboard.io/9iRC4L.jpg",
-        devName: "Arnoldo Jakubowski",
-        devLocation: "Saint Bernard 2240 Aurora, PH",
+        devName: "Arnoldo Ubowski",
+        devLocation: "Saint Bernard, PH",
         devMainRole: "Data Scientists",
         skillSet: "Full Time",
         skillSet2: "UX",
@@ -127,7 +127,7 @@ const DeveloperList = [
         devLocation: "Calamba, PH",
         devMainRole: "Software Developers",
         skillSet: "Full Time",
-        skillSet2: "Photography",
+        skillSet2: "ReactJS",
         skillSet3: "Python"
     },
     {
