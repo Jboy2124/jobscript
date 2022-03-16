@@ -77,7 +77,7 @@ const JobSeekerLogIn = () => {
     <div className="logo">
         <div id="logo">
             <Link to="/Employer">
-                <i className="fa fa-users"></i><a>Employer Log-In</a>
+                <i className="fa fa-users"></i><a>  Employer Log-In</a>
             </Link>
         </div>
         <form onSubmit={login}>

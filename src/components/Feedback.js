@@ -22,7 +22,7 @@ const Feedback = () => {
 
   return (
     <div className='container-feedback'>
-        <form onSubmit="sendEmail(); reset(); return false;">
+        <form className="feedbackForm" onSubmit="sendEmail(); reset(); return false;">
             <h3>GET IN TOUCH</h3>
             <input type="text" id="name" placeholder="Your Name" required/>
             <input type="email" id="email" placeholder="Your Email" required/>

@@ -136,7 +136,6 @@ span {
   form {
     margin: auto;
     width: 55%;
-    top: 50px;
   }
   .logo a {
     font-size: 20px;
@@ -160,8 +159,8 @@ span {
   .topic h1 {
     font-size: 20px;
   }
-  form {
+  /* form {
     top: 20px;
     padding: 7px;
-  }
+  } */
 }
