@@ -58,7 +58,12 @@ const JobSeekerDash = () => {
                 }).map((items) => {
                   return (
                     <div id='display-card-columns' className="col">
-                      <JobSeekerDashCards handlesShowModal={handlesShowModal} id={items.id} category={items.category} title={items.jobTitle} snippets={items.jobSnippet} showData={true}/>
+                      <JobSeekerDashCards handlesShowModal={handlesShowModal} 
+                                id={items.id} 
+                                category={items.category} 
+                                title={items.jobTitle} 
+                                snippets={items.jobSnippet} 
+                                showData={true}/>
                     </div>
                   )
                 })

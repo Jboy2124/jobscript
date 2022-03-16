@@ -84,7 +84,7 @@ const EmployerLogIn = () => {
             <div className="logInContainer">
                 <div className="topic"><h1>Welcome Employer!</h1></div><br/>
                 <div className="topic">Log in using your JobScript credentials</div><br/>
-                <input type="text" name="username" placeholder="Enter Username"></input>
+                <input type="text" name="username" placeholder="Enter Email Address"></input>
                 <span></span>
             </div><br/>
             <div  className="logInContainer">
