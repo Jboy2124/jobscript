@@ -220,7 +220,7 @@ const JobList = [
             "Some C# or VB.NET for desktop applications experience a plus"
         ],
         category: "Desktop",
-        jobSnippet: "Full stack developers are responsible for developing and designing front end web architecture, ensuring the responsiveness of applications, and working alongside graphic designers for web design features, among other duties.",
+        jobSnippet: "Full stack developers are responsible for developing and designing front end web architecture, ensuring the responsiveness of applications",
         employmentStatus: "Full-time",
         salary: 40000,
         aor: "Office Base",

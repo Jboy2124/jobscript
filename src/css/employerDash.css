@@ -1,6 +1,6 @@
 #header-filter {
   background-color: whitesmoke;
-  height: 50px;
+  height: 100px;
   display: flex;
   align-items: center;
 }
@@ -13,9 +13,7 @@
 }
 
 /* JOBSEEKER CARDS STYLE  */
-#card-display-container {
-  background-color: whitesmoke;
-}
+
 
 #employer-card-header {
   text-align: end;
@@ -84,7 +82,7 @@
   background-color: #f27a7a;
   outline: none;
   border: none;
-  font-size: large;
+  font-size: medium;
 }
 
 .buttonStyleEmployer:hover {

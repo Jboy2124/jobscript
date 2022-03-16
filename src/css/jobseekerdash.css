@@ -1,10 +1,10 @@
 #header-filter {
-    background-color: whitesmoke;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 #display-card-columns {
     display: flex;
@@ -17,7 +17,6 @@
     width: 500px;
     height: 50px;
     margin: 10px 0px 0px 0px;
-    /* background-color: white; */
 }
 
 #text-search-box:active {
@@ -37,29 +36,59 @@
     font-size: 13px;
 }
 
+#jobseeker-account-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 /* JOBSEEKER CARDS STYLE  */
 /* #card-display-container {
     background-color: whitesmoke;
 } */
 
+/* #jobseeker-top-icon {
+    width: 25px;
+    height: 30px;
+    margin-bottom: 0;
+    padding-top: 3px;
+}
 
+.jobseeker-top-icon-container {
+    text-align: center;
+    margin-bottom: 0;
+} */
 #jobseeker-card-header {
     text-align: end;
     color: white;
     background-color:#e63c3c;
-    opacity: 0.6;
+    opacity: 0.7;
     font-size: 12px;
     border-top-left-radius: 2em;
 }
 #jobseeker-card-title {
     text-align: center;
-    font-size: 18px;
-    padding: 10px 0px 20px 0px;
+    font-size: 16px;
+    padding: 10px 0px 0px 0px;
+}
+
+#jobseeker-card-company {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 0px;
+}
+
+#jobseeker-card-company-address {
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 10px;
 }
 
 #jobseeker-card-snippets {
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
+    padding-bottom: 2px;
 }
 
 .btn-view-more-job{
@@ -85,6 +114,21 @@
 #jobseeker-card:hover {
     box-shadow: 7px 7px 10px 1px lightgray;
     transition: 0.3s ease-in-out;
+}
+
+.displcay-card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+#emp-card-footer, #emp-card-aor {
+    background-color: grey;
+    color: white;
+    font-size: 11px;
+    padding: 3px;
+    border-radius: 3px;
 }
 
 
@@ -131,3 +175,16 @@
     font-size: 12px;
 }
 
+.btn-click-to-apply-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px 10px;
+    gap: 7px;
+}
+
+#modal-footer-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
