@@ -5,10 +5,14 @@ import '../css/employerDash.css'
 const EmployerDashCards = (props) => {
 
     let handleExpandJobList = () => {
-        props.handlesJobClickEvent(props.id,props.showData);
+        props.handlesJobClickEvent([props.id,props.showData]);
+    }
+
+    let handleSendMessageEvent = () => {
+        props.handlesMessageEvent(props.showData);
     }
   return (
-    <div id='jobseeker-card' className='card' style={{ width: "20rem", height: "24rem" }}>
+    <div id='jobseeker-card' className='card' style={{ width: "20rem", height: "26rem" }}>
         <div id='employer-card-header' className='card-header'>{props.category}</div>
         <div className="card-body">
             <img className="devImg" src={props.devImg}></img>
@@ -21,7 +25,8 @@ const EmployerDashCards = (props) => {
             </p>
         </div>
         <div className='btn-view-more-job'>
-        <button id='btn-view-more-jobs' onClick={handleExpandJobList} type='button' className='btn btn-outline-danger'>View more</button> <button id='btn-view-more-jobs' onClick={handleExpandJobList} type='button' className='btn btn-outline-danger m-2'> Message </button>
+        <button id='btn-view-more-jobs' onClick={handleExpandJobList} type='button' className='btn btn-outline-danger'>View more</button> 
+        <button id='btn-view-more-jobs' onClick={handleSendMessageEvent} type='button' className='btn btn-outline-danger m-2'> Message </button>
         </div>
         
     </div>

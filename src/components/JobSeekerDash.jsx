@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { Offcanvas, Modal, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 import '../css/jobseekerdash.css'
 import JobSeekerDashCards from './JobSeekerDashCards';
 import JobList from '../data-model/JobList';
@@ -10,20 +11,20 @@ let arrayJobDetails = [];
 
 
 const JobSeekerDash = () => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const [showModal, setShowModal] = useState(false);
   const [searchJob, setSearchJob] = useState("");
   let txtSearch = useRef(null);
   
-
+  //This will get the ID of the  selected card
+  // and filter it and assign it to the array
   const handlesShowModal = (clickedCardValue) => {
     setShowModal(clickedCardValue[1]);
     arrayJobDetails = JobList.filter(item => item.id == clickedCardValue[0]).map(list => { return list });
   }
 
-
+  
+  //This will get the value of the text
+  //on every input (onchange evemt)
   let searchJobList = (e) => {
     e.preventDefault();
     setSearchJob(txtSearch.current.value);
@@ -31,13 +32,31 @@ const JobSeekerDash = () => {
 
     return (
       <div className="container-fluid p-0">
-          <div id='header-filter' className='container'>
+          <div id='header-filter' className='container d-sm-flex justify-content-between'>
             <div className="search-container">
               <div className="input-group">
-                <input type="text" ref={txtSearch} className="form-control" onChange={searchJobList} placeholder="Search Job..."></input>
-                <button className="btn btn-outline-danger" type="button"><i className='bi bi-search'></i></button>
+                <button className="btn btn-danger" type="button"><i className='bi bi-search'></i></button>
+                <input id='text-search-box' type="text" ref={txtSearch} className="form-control" onChange={searchJobList} placeholder="Search Job..."></input>
               </div>
             </div>
+
+            <div id='jobseeker-account-container'>
+                <button className="btn btn-secondary dropdown-toggle buttonStyleEmployer" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <i className="fa fa-user"></i> Account
+                                  </button>
+                                  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a className="dropdown-item" href="#">
+                                      <h4>Cge</h4>
+                                      <p className="text-danger">Job Seeker</p>
+                                    </a>
+                                    <a className="dropdown-item" > <i className="fa fa-user"></i> My Profile</a>
+                                    <a className="dropdown-item" > <i className="fa fa-folder"></i> Posted Jobs</a>
+                                    <a className="dropdown-item" > <i className="fa fa-cog"></i> Account Settings</a>
+                                    <Link to="/Employer" className="dropdown-item" >
+                                      <i className="fa fa-arrow-left"></i>  Log Out
+                                    </Link>
+                                  </div>
+                </div>
           </div>
           <div id='card-display-container' className="container pb-5">
             <div className="row">
@@ -56,6 +75,10 @@ const JobSeekerDash = () => {
                     <div id='display-card-columns' className="col">
                       <JobSeekerDashCards handlesShowModal={handlesShowModal} 
                                 id={items.id} 
+                                company={items.company}
+                                address={items.address}
+                                employmentStatus={items.employmentStatus}
+                                aor={items.aor}
                                 category={items.category} 
                                 title={items.jobTitle} 
                                 snippets={items.jobSnippet} 
@@ -75,7 +98,7 @@ const JobSeekerDash = () => {
             { arrayJobDetails.map((items) => {
                 salaryValue = parseFloat(items.salary).toLocaleString(undefined, {maximumFractionDigits: 2});
                 return (
-                  <Modal show={showModal} size="lg" aria-labelledby="contained-modal-title-vcenter" centered >
+                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered >
                     <Modal.Header className='modal-header'>
                       <Modal.Title className='modal-title'>ABOUT THE JOB IN DETAILS</Modal.Title>
                       <div className='modal-tag'>
@@ -107,25 +130,18 @@ const JobSeekerDash = () => {
                               })
                             }
                           </ul>
+                          <div className='btn-click-to-apply-container'>
+                              <button id='click-apply' className='btn btn-danger'>Click to Apply</button>
+                              <button className='btn btn-outline-danger' onClick={() => setShowModal(false)}>Close</button>
+                          </div>
                       </Modal.Body>
-                    <Modal.Footer>
-                      <button className='btn btn-outline-danger' onClick={() => setShowModal(false)}>Close</button>
+                    <Modal.Footer className='modal-footer-display'>
+                          <div>&copy; 2022 JobScript - All Rights Reserved</div>
                       </Modal.Footer>
                   </Modal> 
                 )
               })
             }
-
-            {/* <Offcanvas show={show} onHide={handleClose}>
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body >
-                  <div style={{width: "10px"}}>
-                    <h5>Body</h5>
-                  </div>
-              </Offcanvas.Body>
-            </Offcanvas>  */}
       </div>
     )
 }
