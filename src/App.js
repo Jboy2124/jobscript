@@ -10,6 +10,8 @@ import JobSeekerSignUp from "./components/JobSeekerSignUp";
 import EmployerLogIn from "./components/EmployerLogIn"
 import EmployerSignUp from "./components/EmployerSignUp";
 import JobSeekerDash from "./components/JobSeekerDash";
+import Feedback from "./components/Feedback";
+import AboutUs from "./components/AboutUs";
 
 
 const App = () => {
@@ -27,6 +29,8 @@ const App = () => {
         <Route exact path="/EmployerSignUp" element={<EmployerSignUp />}></Route>
         <Route exact path="/JobseekerSignUp" element={<JobSeekerSignUp />}> </Route>
         <Route exact path="/JobSeekerDash"   element={<JobSeekerDash />}> </Route>
+        <Route exact path="/Feedback"   element={<Feedback/>}> </Route>
+        <Route exact path="/AboutUs"   element={<AboutUs/>}> </Route>
      </Routes>
    </Router>
   )

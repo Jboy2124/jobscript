@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../css/footer.css'
 import googleplay from '../images/googleplay.png'
 
@@ -75,18 +76,22 @@ const Footer = () => {
                     </div>
                     <div id='footer-columns' className="col-sm-2">
                         <h5>JobScript</h5>
-                        <p><a href="#">About Us</a></p>
+                        <Link to="/AboutUs">
+                            <p><a href="#">About Us</a></p>
+                        </Link>
                         <p><a href="#">Contact Us</a></p>
                         <p><a href="#">Career with Us</a></p>
-                        <p><a href="#">Send Feedback</a></p>
+                        <Link to="/Feedback">
+                            <p><a href="#">Send Feedback</a></p>
+                        </Link>
                         <p><a href="#">Testimonials</a></p>
                     </div>
                     <div id='footer-columns' className="col-sm-2">
                         <h5>Stay Connected</h5>
-                        <p><a href="#">Facebook</a></p>
-                        <p><a href="#">Twitter</a></p>
-                        <p><a href="#">LinkedIn</a></p>
-                        <p><a href="#">Youtube</a></p>
+                        <p><a href="https://www.facebook.com/JobStreetPhilippines">Facebook</a></p>
+                        <p><a href="https://twitter.com/JobStreetPH">Twitter</a></p>
+                        <p><a href="https://www.linkedin.com/company/jobstreetph/">LinkedIn</a></p>
+                        <p><a href="https://www.youtube.com/user/JobStreetPhilippines">Youtube</a></p>
                         {/* <p><a href="#">Testimonials</a></p> */}
                     </div>
                     <div id='footer-columns' className="col-sm-2">
