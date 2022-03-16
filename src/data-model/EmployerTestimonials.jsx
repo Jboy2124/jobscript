@@ -18,7 +18,7 @@ const EmployerTestimonials = [
         id: 3,
         imgPath: "images/testimony/testimony6.png",
         name: "Stacia J. Michael",
-        testimonial: "We have been utilizing staffing provided by JobScript and have had a fantastic experience. We have been lucky to have an outstanding developer taking our Company to its full potential.",
+        testimonial: "We have been utilizing staffing provided by JobScript and have had a fantastic experience. We have been lucky to have an outstanding developer taking our Company to its full potential. Kudos to the team.",
         type: "Employer"
     },
 ]
