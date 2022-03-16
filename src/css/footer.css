@@ -94,6 +94,9 @@
     box-shadow: none;
     outline: none;
   }
+  .imgMobile {
+    width: 50%;
+  }
 }
 @media (max-width: 425px) {
   #footerDisplay {
@@ -101,6 +104,9 @@
   }
   .flexColumn {
     flex-direction: column;
+  }
+  .imgMobile {
+    width: 100%;
   }
 }
 @media (min-width: 1023px) {

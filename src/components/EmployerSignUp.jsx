@@ -41,7 +41,7 @@ const EmployerSignUp = () => {
       passwordRef.current.value = null;
       setId(Date.now());
       
-      alert("Registration Sucessfull")
+      alert("Registration Successful")
       setReturnValue(true)
   }
  

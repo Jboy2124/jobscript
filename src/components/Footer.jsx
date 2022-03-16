@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/footer.css'
 import googleplay from '../images/googleplay.png'
+import googleplay2 from '../images/googleplay mobile.png'
 
 
 const Footer = () => {
@@ -16,7 +17,7 @@ const Footer = () => {
                             <option value="US">USA</option>
                         </select>
                     </div>
-                    <div className="col-sm-3">
+                    <div className="col-sm-4 ">
                         <div id='social-media' className="row">
                             <div className="col-sm-2 footerIcons">
                                 <i className="fa fa-phone"></i>
@@ -26,12 +27,12 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-3">
+                    <div className="col-sm-2 ">
                          <div id='social-media' className="row">
                             <div className="col-sm-2 footerIcons">
                                 <i className="fa fa-envelope"></i>
                             </div>
-                            <div className="col-sm-2 footerIcons">
+                            <div className="col-sm-7 footerIcons">
                                 info@jobscript.com.ph
                             </div>
                         </div>
@@ -158,6 +159,7 @@ const Footer = () => {
                                 <div className="accordion-body"> Twitter</div>
                                 <div className="accordion-body"> LinkedIn</div>
                                 <div className="accordion-body"> Youtube</div>
+                                <div className="accordion-body">  <p><a href="#"><img className='imgMobile' src={googleplay2}/></a></p></div>
                         </div>
                 </div>
                 <div class="accordion-item">
