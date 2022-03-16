@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/jobseekerdash.css'
 
-
 const JobSeekerDashCards = (props) => {
-
     let handleExpandJobList = () => {
-        props.handlesJobClickEvent(props.id);
+        props.handlesShowModal([props.id,props.showData]);
     }
   return (
     <div id='jobseeker-card' className='card' style={{ width: "20rem", height: "24rem" }}>
@@ -17,7 +15,6 @@ const JobSeekerDashCards = (props) => {
         <div className='btn-view-more-job'>
             <button id='btn-view-more-jobs' onClick={handleExpandJobList} type='button' className='btn btn-outline-danger'>View more</button>
         </div>
-        
     </div>
   )
 }
