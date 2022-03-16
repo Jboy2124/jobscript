@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@800&family=Smooch+Sans:wght@700&display=swap");
+
+.homepageH1 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.homepageText {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: grey;
+}
+
+.homepageButton {
+  padding: 9px 25px;
+  font-size: 20px;
+}
+
+.homepageContainer {
+  width: 85%;
+  margin: auto;
+  padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .homepageContainer {
+    width: 100%;
+    padding-top: 5px;
+  }
+  .homepageH1 {
+    font-size: 40px;
+  }
+
+  .homepageText {
+    font-size: 12px;
+  }
+  .homepageButton {
+    padding: 4px 20px;
+    font-size: 15px;
+  }
+}

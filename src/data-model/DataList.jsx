@@ -2,23 +2,23 @@
 const cardContent = [
     {
         id: 1,
-        imgPath: "images/the-team/beth.png",
-        title: "Elizabeth Santos",
-        description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        imgPath: "https://snipboard.io/wrRuED.jpg",
+        title: "Elizabeth",
+        description: "Web Developer",
         portfolio: "https://ecsantos1990.github.io/portfolio/"
     },
     {
         id: 2,
-        imgPath: "images/the-team/dan.png",
-        title: "Dan Harry Apalis",
-        description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        imgPath: "https://snipboard.io/fjtW0m.jpg",
+        title: "Dan Harry",
+        description: "Web Developer",
         portfolio: "https://danharry2014.github.io/Eportfolio/index.html"
     },
     {
         id: 3,
-        imgPath: "images/the-team/jufel.png",
-        title: "Jufel Abecia",
-        description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        imgPath: "https://snipboard.io/pBexdr.jpg",
+        title: "Jufel",
+        description: "Web Developer",
         portfolio: "https://jufel-portfolio.herokuapp.com/#home"
     },
 ];
