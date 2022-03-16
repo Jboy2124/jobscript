@@ -17,13 +17,16 @@ const JobSeekerDash = () => {
   const [searchJob, setSearchJob] = useState("");
   let txtSearch = useRef(null);
   
-
+  //This will get the ID of the  selected card
+  // and filter it and assign it to the array
   const handlesShowModal = (clickedCardValue) => {
     setShowModal(clickedCardValue[1]);
     arrayJobDetails = JobList.filter(item => item.id == clickedCardValue[0]).map(list => { return list });
   }
 
-
+  
+  //This will get the value of the text
+  //on every input (onchange evemt)
   let searchJobList = (e) => {
     e.preventDefault();
     setSearchJob(txtSearch.current.value);
@@ -34,10 +37,11 @@ const JobSeekerDash = () => {
           <div id='header-filter' className='container'>
             <div className="search-container">
               <div className="input-group">
-                <input type="text" ref={txtSearch} className="form-control" onChange={searchJobList} placeholder="Search Job..."></input>
+                <input id='text-search-box' type="text" ref={txtSearch} className="form-control" onChange={searchJobList} placeholder="Search Job..."></input>
                 <button className="btn btn-outline-danger" type="button"><i className='bi bi-search'></i></button>
               </div>
             </div>
+            
           </div>
           <div id='card-display-container' className="container pb-5">
             <div className="row">

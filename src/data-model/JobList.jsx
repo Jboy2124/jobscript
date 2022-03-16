@@ -28,7 +28,7 @@ const JobList = [
         "Proficiency using the command line."
     ],
         category: "Web Application",
-        jobSnippet: "This character is a woman in her fifties, who is very overbearing. She comes from a poor background, lives in a city apartment and tends to work too hard.",
+        jobSnippet: "We are looking for a highly skilled computer programmer who is comfortable with both front and back end programming.",
         employmentStatus: "Full-Time",
         salary: 25000,
         aor: "Office Base",
@@ -220,7 +220,7 @@ const JobList = [
             "Some C# or VB.NET for desktop applications experience a plus"
         ],
         category: "Desktop",
-        jobSnippet: "This character is a woman in her late twenties, who can be quite mysterious. She comes from a wealthy background, lives in an eco-friendly home and tends to drive too fast.",
+        jobSnippet: "Full stack developers are responsible for developing and designing front end web architecture, ensuring the responsiveness of applications, and working alongside graphic designers for web design features, among other duties.",
         employmentStatus: "Full-time",
         salary: 40000,
         aor: "Office Base",
