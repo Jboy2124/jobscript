@@ -58,9 +58,51 @@
     color: white;
 }
 
-
-
 #jobseeker-card:hover {
     box-shadow: 7px 7px 10px 1px lightgray;
     transition: 0.3s ease-in-out;
+}
+
+
+/* MODAL STYLE  */
+.modal-header {
+    background-color: #e63c3c;
+    color: white;
+}
+
+.modal-tag p{
+    margin: 0;
+    text-align: end;
+    font-size: 12px;
+}
+
+.modal-body p {
+    margin: 0;
+}
+
+.modal-body-company {
+    font-size: 15px;
+}
+
+.modal-body-address {
+    font-size: 12px;
+}
+
+.modal-body-contact{
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+.modal-body-salary {
+    font-size: 11px;
+}
+
+.modal-body-aor {
+    font-size: 11px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.modal-requirements li{
+    font-size: 12px;
 }
