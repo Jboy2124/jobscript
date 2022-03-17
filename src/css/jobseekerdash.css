@@ -19,9 +19,11 @@
     margin: 10px 0px 0px 0px;
 }
 
-#text-search-box:active {
-    outline: none;
-    outline-width: 0px;
+#text-search-box:focus {
+  border-color: #ced4da; /* default B5 color or set your own color*/
+  /* border: none !important;  */
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .search-jobs {

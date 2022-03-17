@@ -12,6 +12,13 @@
   padding: 20px;
 }
 
+#text-developers-search-box {
+  border-color: #ced4da; /* default B5 color or set your own color*/
+  /* border: none !important;  */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* JOBSEEKER CARDS STYLE  */
 
 
@@ -30,7 +37,7 @@
 }
 
 #dev-card-location {
-  font-size: 15px;
+  font-size: 13px;
   padding: 0, 4px;
   color: grey;
 }
@@ -44,6 +51,7 @@
   padding: 4px;
   margin: 0 5px;
   border-radius: 4px;
+  font-size: 12px;
 }
 
 .btn-view-more-job {
@@ -106,14 +114,17 @@
 /* MODAL STYLE  */
 
 #basic-info-tag {
-  font-size: 12px;
-  text-decoration: underline;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  /* text-decoration: underline; */
   padding-left: 40px;
 }
 
 #basic-info-value-tag {
   font-size: 12px;
-  font-weight: bold;
+  /* font-weight: bold; */
+  padding-top: 3px;
   padding-left: 40px;
 }
 
@@ -148,4 +159,20 @@
   justify-content: end;
   align-items: center;
   padding-top: 20px;
+}
+
+#valueble-skills-list-header {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  /* padding-left: -20px; */
+}
+
+#valuable-skills-list-value {
+  font-size: 12px;
+  /* padding-left: 10px; */
+}
+
+#valuable-skills-list-ul {
+  padding-left: 18px;
 }

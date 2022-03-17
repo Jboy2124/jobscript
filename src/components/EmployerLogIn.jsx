@@ -77,7 +77,7 @@ const EmployerLogIn = () => {
     <div className="logo">
         <div id="logo">
             <Link to="/Jobseeker">
-                <i className="fa fa-users"></i> <a>Job Seeker Log-In</a>
+                <i className="fa fa-users"></i>Job Seeker Log-In
             </Link>
         </div>
         <form onSubmit={login} className="employer" >
@@ -94,7 +94,7 @@ const EmployerLogIn = () => {
 			<button id="log-in">Log-in</button>
             <div className="signUp"><p>New User?
                 <Link to="/EmployerSignUp">
-                    <a> Sign up FREE Now</a>
+                    Sign up FREE Now
                 </Link> </p>
             </div>
             <div className="terms"><p>This site is protected by reCAPTCHA and JobScript <a href="#">Terms of Use</a> and  <a href="#">Privacy Policy</a> apply. </p></div>
