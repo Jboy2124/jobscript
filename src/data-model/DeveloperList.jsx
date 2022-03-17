@@ -8,7 +8,29 @@ const DeveloperList = [
         devMainRole: "UI/UX Designer",
         skillSet: "Full Time",
         skillSet2: "Sketch",
-        skillSet3: "Figma"
+        skillSet3: "Figma",
+        age: 30,
+        yearExperience: "2 years",
+        contactNo: "656 996 95984",
+        emailAd: "example@email.com",
+        workExperience: [
+            {
+                comp: "Rosenbaum Group",
+                position: "Java Software Engineer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Crona, Durgan and Schneider",
+                position: "Network Engineer",
+                tenure: "Feb 2018 - Oct 2019",
+            },
+            {
+                comp: "Harber-Kreiger",
+                position: "IAM SailPoint DevOps Engineer",
+                tenure: "Aug 2016 - Feb 2017",
+            },
+        ]
+
     },
     {
         id: 2,
@@ -18,7 +40,23 @@ const DeveloperList = [
         devMainRole: "Mobile",
         skillSet: "Full Time",
         skillSet2: "Illustrator",
-        skillSet3: "Design"
+        skillSet3: "Design",
+        age: 28,
+        yearExperience: "3 years",
+        contactNo: "632 957 5454",
+        emailAd: "AlfredATalley@rhyta.com",
+        workExperience: [
+            {
+                comp: "Turcotte PLC",
+                position: "Full Stack Developer - Sydney",
+                tenure: "Mar 2015 - Jan 2018",
+            },
+            {
+                comp: "Satterfield Inc",
+                position: "Python Developer",
+                tenure: "Nov 2012 - Dec 2014",
+            },
+        ]
     },
     {
         id: 3,
@@ -28,7 +66,23 @@ const DeveloperList = [
         devMainRole: "Visual Designers",
         skillSet: "Part Time",
         skillSet2: "Effects",
-        skillSet3: "HTML"
+        skillSet3: "HTML",
+        age: 26,
+        yearExperience: "3 years",
+        contactNo: "632 957 5454",
+        emailAd: "westley.witting@jacobs.com",
+        workExperience: [
+            {
+                comp: "Mosciski, Spinka and Bernhard",
+                position: "Service Designer",
+                tenure: "Dec 2017 - Dec 2020",
+            },
+            {
+                comp: "Ferry-Ondricka",
+                position: "Digital Workplace Solution Designer",
+                tenure: "Jan 2012 - Nov 2016",
+            },
+        ]
     },
     {
         id: 4,
@@ -38,7 +92,23 @@ const DeveloperList = [
         devMainRole: "DevOps",
         skillSet: "Full Time",
         skillSet2: "Responsive",
-        skillSet3: "Mobile"
+        skillSet3: "Mobile",
+        age: 35,
+        yearExperience: "7 years",
+        contactNo: "22-5014010",
+        emailAd: "meghan.kuvalis@kreiger.com",
+        workExperience: [
+            {
+                comp: "Glover-Hermann",
+                position: "Cloud DevOps SRE Engineer",
+                tenure: "Nov 2002 - Dec 2010",
+            },
+            {
+                comp: "Windler Ltd",
+                position: "Project Manager",
+                tenure: "Jan 2012 - Sep 2016",
+            },
+        ]
     },
     {
         id: 5,
@@ -48,7 +118,23 @@ const DeveloperList = [
         devMainRole: "Data Scientists",
         skillSet: "Full Time",
         skillSet2: "UX",
-        skillSet3: "UI"
+        skillSet3: "UI",
+        age: 32,
+        yearExperience: "8 years",
+        contactNo: "45-4238934",
+        emailAd: "gage21@zboncak.com",
+        workExperience: [
+            {
+                comp: "Will-McKenzie",
+                position: "Program Test Lead",
+                tenure: "Apr 2010 - Mar 2015",
+            },
+            {
+                comp: "Glover and Sons",
+                position: "Java Software Engineer",
+                tenure: "Jun 2017 - Dec 2020",
+            },
+        ]
     },
     {
         id: 6,
@@ -58,7 +144,28 @@ const DeveloperList = [
         devMainRole: "Web",
         skillSet: "Part Time",
         skillSet2: "Java",
-        skillSet3: "C++"
+        skillSet3: "C++",
+        age: 33,
+        yearExperience: "5 years",
+        contactNo: "81-7822895",
+        emailAd: "novella68@metz.com",
+        workExperience: [
+            {
+                comp: "Watsica-Kirlin",
+                position: "Digital Workplace Solution Designer",
+                tenure: "Feb 2015 - Mar 2016",
+            },
+            {
+                comp: "Yost, Hand and Abernathy",
+                position: "Service Designer",
+                tenure: "Jul 2017 - Dec 2020",
+            },
+            {
+                comp: "Sanford, Mayert and Hegmann",
+                position: "Data Centre Infrastructure Analyst",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+        ]
     },
     {
         id: 7,
@@ -68,7 +175,23 @@ const DeveloperList = [
         devMainRole: "Digital Project",
         skillSet: "Part Time",
         skillSet2: "UX Writing",
-        skillSet3: "Figma"
+        skillSet3: "Figma",
+        age: 24,
+        yearExperience: "4 years",
+        contactNo: "72-4634718",
+        emailAd: "mkrajcik@gorczany.org",
+        workExperience: [
+            {
+                comp: "Zboncak-Gleason",
+                position: "Network Engineer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Sanford, Mayert and Hegmann",
+                position: "IAM SailPoint DevOps Engineer",
+                tenure: "Jan 2018 - Dec 2019",
+            },
+        ]
     },
     {
         id: 8,
@@ -78,7 +201,23 @@ const DeveloperList = [
         devMainRole: "Branding",
         skillSet: "Full Time",
         skillSet2: "Animations",
-        skillSet3: "Sketch"
+        skillSet3: "Sketch",
+        age: 28,
+        yearExperience: "5 years",
+        contactNo: "72-1346924",
+        emailAd: "gerson98@considine.com",
+        workExperience: [
+            {
+                comp: "Turcotte, Pfannerstill and Nader",
+                position: "Market Data Engineer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Considine, Jerde and Schumm",
+                position: "Cloud DevOps SRE Engineer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+        ]
     },
     {
         id: 9,
@@ -88,7 +227,18 @@ const DeveloperList = [
         devMainRole: "Visual Designers",
         skillSet: "Freelance",
         skillSet2: "IOS",
-        skillSet3: "Responsive"
+        skillSet3: "Responsive",
+        age: 21,
+        yearExperience: "1 year",
+        contactNo: "95-6020341",
+        emailAd: "alice95@johnson.com",
+        workExperience: [
+            {
+                comp: "Breitenberg, Mills and Hudson",
+                position: "Program Test Lead",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+        ]
     },
     {
         id: 10,
@@ -98,7 +248,23 @@ const DeveloperList = [
         devMainRole: "Mobile",
         skillSet: "Full Time",
         skillSet2: "UX",
-        skillSet3: "UI"
+        skillSet3: "UI",
+        age: 25,
+        yearExperience: "5 years",
+        contactNo: "95-6020341",
+        emailAd: "alice95@johnson.com",
+        workExperience: [
+            {
+                comp: "Considine, Jerde and Schumm",
+                position: "Tech Resilience Data Analyst",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Breitenberg, Mills and Hudson",
+                position: "Manager- Test Manager",
+                tenure: "Oct 2017 - Dec 2019",
+            },
+        ]
     },
     {
         id: 11,
@@ -108,7 +274,23 @@ const DeveloperList = [
         devMainRole: "Data Scientists",
         skillSet: "Part Time",
         skillSet2: "Javscript",
-        skillSet3: "HTML"
+        skillSet3: "HTML",
+        age: 27,
+        yearExperience: "2 years",
+        contactNo: "24-8117609",
+        emailAd: "ydurgan@bartell.com",
+        workExperience: [
+            {
+                comp: "Reinvent Out-Of-The-Box Models",
+                position: "DevOps Cloud Engineer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "	Schiller, Johns and Moen",
+                position: "Data Business Analyst",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+        ]
     },
     {
         id: 12,
@@ -118,7 +300,23 @@ const DeveloperList = [
         devMainRole: "UI/UX Designer",
         skillSet: "Full Time",
         skillSet2: "Sketch",
-        skillSet3: "Layout"
+        skillSet3: "Layout",
+        age: 24,
+        yearExperience: "3 years",
+        contactNo: "90-4019106",
+        emailAd: "ikrajcik@rosenbaum.net",
+        workExperience: [
+            {
+                comp: "Streamline Customized Partnerships",
+                position: "Python Developer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Effertz Inc",
+                position: "Developer - Settlement Technology",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+        ]
     },
     {
         id: 13,
@@ -128,7 +326,23 @@ const DeveloperList = [
         devMainRole: "Software Developers",
         skillSet: "Full Time",
         skillSet2: "ReactJS",
-        skillSet3: "Python"
+        skillSet3: "Python",
+        age: 25,
+        yearExperience: "3 years",
+        contactNo: "30-6968639",
+        emailAd: "xblanda@fadel.biz",
+        workExperience: [
+            {
+                comp: "Envisioneer Distributed Roi",
+                position: "Data Centre Infrastructure Analyst",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Mosciski, Spinka and Bernhard",
+                position: "IAM SailPoint DevOps Engineer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+        ]
     },
     {
         id: 14,
@@ -138,7 +352,23 @@ const DeveloperList = [
         devMainRole: "Python Developer",
         skillSet: "Full Time",
         skillSet2: "Sketch",
-        skillSet3: "Figma"
+        skillSet3: "Figma",
+        age: 22,
+        yearExperience: "2 years",
+        contactNo: "68-6906396",
+        emailAd: "udibbert@hand.biz",
+        workExperience: [
+            {
+                comp: "Architect Innovative Mindshare",
+                position: "Cloud DevOps SRE Engineer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Yost, Hand and Abernathy	",
+                position: "Senior Network Security Engineer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+        ]
     },
     {
         id: 15,
@@ -148,7 +378,23 @@ const DeveloperList = [
         devMainRole: "Java Developer",
         skillSet: "Illustrator",
         skillSet2: "Design",
-        skillSet3: "Figma"
+        skillSet3: "Figma",
+        age: 32,
+        yearExperience: "6 years",
+        contactNo: "72-4634718",
+        emailAd: "mkrajcik@gorczany.org",
+        workExperience: [
+            {
+                comp: "Cultivate Open-Source Supply-Chains",
+                position: "Executive – Financial System Operations (RPA- BluePrism)",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Turcotte, Pfannerstill and Nader",
+                position: "Manager- Test Manager",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+        ]
     }, {
         id: 16,
         devImg: "https://snipboard.io/tJSh5P.jpg",
@@ -157,7 +403,23 @@ const DeveloperList = [
         devMainRole: "JavaScript Developer",
         skillSet: "Full Time",
         skillSet2: "Sketch",
-        skillSet3: "Figma"
+        skillSet3: "Figma",
+        age: 30,
+        yearExperience: "6 years",
+        contactNo: "90-4019106",
+        emailAd: "ikrajcik@rosenbaum.net",
+        workExperience: [
+            {
+                comp: "Innovate Robust E-Tailers",
+                position: "Digital Workplace Solution Designer",
+                tenure: "Jan 2019 - Dec 2020",
+            },
+            {
+                comp: "Lakin-Daugherty",
+                position: "Service Designer",
+                tenure: "Jan 2010 - Jan 2012",
+            },
+        ]
     },
    
 ];

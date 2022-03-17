@@ -19,13 +19,12 @@
   text-align: end;
   color: white;
   font-size: 14px;
-  font-weight: bold;
   border-top-left-radius: 2em;
   background-color: #f27a7a;
 }
 
 #dev-card-title {
-  font-size: 25px;
+  font-size: 16px;
   padding: 0, 4px;
   padding-top: 9px;
 }
@@ -101,4 +100,43 @@
     width: 60%;
     /* background-color: white; */
   }
+}
+
+
+/* MODAL STYLE  */
+
+#basic-info-tag {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+#basic-info-value-tag {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#work-exp-company {
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+#work-exp-pos, #work-exp-tenure {
+  font-size: 12px;
+  padding-left: 50px;
+}
+/* 
+#work-exp-row {
+  padding-left: 10px;
+} */
+
+
+#send-message-form {
+  padding: 10px;
+}
+
+#btn-send-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
