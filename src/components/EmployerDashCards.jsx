@@ -17,7 +17,7 @@ const EmployerDashCards = (props) => {
         <div className="card-body">
             <img className="devImg" src={props.devImg}></img>
             <h5 id='dev-card-title' className="card-title">{props.title}</h5>
-            <p id='dev-card-location' className="card-text"><i class="fa fa-location-arrow" aria-hidden="true"></i>  {props.location}</p>
+            <p id='dev-card-location' className="card-text"><i className="fa fa-location-arrow" aria-hidden="true"></i>  {props.location}</p>
             <p className="dev-card-skillset">
                 <a>{props.skillset}</a>
                 <a>{props.skillset2}</a>

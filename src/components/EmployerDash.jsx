@@ -5,11 +5,12 @@ import { Modal } from 'react-bootstrap'
 import EmployerDashCards from './EmployerDashCards';
 import DeveloperList from '../data-model/DeveloperList';
 import Footer from './Footer';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 let arrayJobDetails = [];
 
 const EmployerDash = () => {
 
+  // RegisterJobSeekerDetails
   const existingUser = JSON.parse(localStorage.getItem('RegisterEmployerDetails'));
   let employerUser = "";
 
@@ -17,6 +18,7 @@ const EmployerDash = () => {
     employerUser = existingUser[key].personName;
   }
 
+  const navigate = useNavigate();
   const [searchJob, setSearchJob] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [showModalMessage, setShowModalMessage] = useState(false);
@@ -53,21 +55,22 @@ const EmployerDash = () => {
                               <button className="btn btn-secondary dropdown-toggle buttonStyleEmployer" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <i className="fa fa-user"></i>     Account
                               </button>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">
+                              <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a className="dropdown-item" href="">
                                    <h4>{employerUser}</h4>
                                    <p className="text-danger">Employer</p>
                                 </a>
-                                <a class="dropdown-item" > <i className="fa fa-user"></i> My Profile</a>
-                                <a class="dropdown-item" > <i className="fa fa-folder"></i> Posted Jobs</a>
-                                <a class="dropdown-item" > <i className="fa fa-cog"></i> Account Settings</a>
-                                <Link to="/Employer" class="dropdown-item" >
-                                  <i class="fa fa-arrow-left"></i>  Log Out
-                                </Link>
+                                <a className="dropdown-item" > <i className="fa fa-user"></i> My Profile</a>
+                                <a className="dropdown-item" > <i className="fa fa-folder"></i> Posted Jobs</a>
+                                <a className="dropdown-item" > <i className="fa fa-cog"></i> Account Settings</a>
+                                <a className="dropdown-item" onClick={()=>navigate("/Employee")} > <i className="fa fa-arrow-left"></i> Log Out</a>
+                                {/* <Link to="/Employer" className="dropdown-item" > */}
+                                  {/* <i className="fa fa-arrow-left"></i>  Log Out */}
+                                {/* </Link> */}
                               </div>
             </div>
           </div>
-          <div id='card-display-container' className="container pb-5">
+          <div data-aos="fade-up" id='card-display-container' className="container pb-5">
             <div className="row">
               {
                 DeveloperList.filter((i) => {
@@ -116,6 +119,7 @@ const EmployerDash = () => {
                       <Modal.Title className='modal-title'><h5>JOB SEEKER INFORMATION</h5></Modal.Title>
                     </Modal.Header>
                       <Modal.Body className='modal-body'>
+                        {/* <form id='view-jobseeker-info-modal-form' action=""> */}
                         <h5>Basic Information</h5>
                           <div className="row pb-4">
                             <div className="col-sm-4">
@@ -152,7 +156,7 @@ const EmployerDash = () => {
                           {
                             arrayJobDetails.map(items => {
                               return (
-                                <div className="row">{items.workExperience.map(i =>{
+                                <div className="row pt-3">{items.workExperience.map(i =>{
                                     return(
                                       <div id='work-exp-row' className="row pb-3">
                                         <p id='work-exp-company'>{i.comp}</p>
@@ -169,6 +173,7 @@ const EmployerDash = () => {
                               <button id='click-apply' className='btn btn-danger'>Print Resume</button>
                               <button className='btn btn-outline-danger' onClick={() => setShowModal(false)}>Close</button>
                           </div>
+                        {/* </form> */}
                       </Modal.Body>
                     <Modal.Footer className='modal-footer-display'>
                           <div>&copy; 2022 JobScript - All Rights Reserved</div>
@@ -178,34 +183,34 @@ const EmployerDash = () => {
               })
             }
 
-            <Modal  show={showModalMessage} onHide={() => setShowModalMessage(false)} size="lg" centered >
+            <Modal show={showModalMessage} onHide={() => setShowModalMessage(false)} size="lg" centered >
               <Modal.Header>
                 <Modal.Title><h5>Send Message</h5> </Modal.Title>
               </Modal.Header>
               <Modal.Body>
                 <div>
                   <form id='send-message-form' action="">
-                    <div className="row d-flex justify-content-center align-items-center">
-                      <div className="col-sm-4">Sender</div>
-                      <div className="col-sm-8">
+                    <div className="row d-flex justify-content-center align-items-center pb-3">
+                      <div className="col-sm-3">Sender</div>
+                      <div className="col-sm-9">
                         <input type="text" className="form-control" placeholder="example@email.com"/>
                       </div>
                     </div>
-                    <div className="row d-flex justify-content-center align-items-center">
-                      <div className="col-sm-4">Recepient</div>
-                      <div className="col-sm-8">
+                    <div className="row d-flex justify-content-center align-items-center pb-3">
+                      <div className="col-sm-3">Recepient</div>
+                      <div className="col-sm-9">
                         <input type="text" className="form-control" placeholder="example@email.com"/>
                       </div>
                     </div>
-                    <div className="row d-flex justify-content-center align-items-center">
-                      <div className="col-sm-4">Subject</div>
-                      <div className="col-sm-8">
+                    <div className="row d-flex justify-content-center align-items-center pb-3">
+                      <div className="col-sm-3">Subject</div>
+                      <div className="col-sm-9">
                         <input type="text" className="form-control" placeholder=""/>
                       </div>
                     </div>
-                    <div className="row d-flex justify-content-center align-items-start">
-                      <div className="col-sm-4">Message</div>
-                      <div className="col-sm-8">
+                    <div className="row d-flex justify-content-center align-items-start pb-3">
+                      <div className="col-sm-3">Message</div>
+                      <div className="col-sm-9">
                         <textarea className="form-control" name="" id="" cols="30" rows="5"></textarea>
                       </div>
                     </div>

@@ -108,22 +108,25 @@
 #basic-info-tag {
   font-size: 12px;
   text-decoration: underline;
+  padding-left: 40px;
 }
 
 #basic-info-value-tag {
   font-size: 12px;
   font-weight: bold;
+  padding-left: 40px;
 }
 
 #work-exp-company {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
-  padding-left: 50px;
+  font-style: italic;
+  padding-left: 70px;
 }
 
 #work-exp-pos, #work-exp-tenure {
   font-size: 12px;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 /* 
 #work-exp-row {
@@ -132,11 +135,17 @@
 
 
 #send-message-form {
-  padding: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+#view-jobseeker-info-modal-form {
+  border-radius: 25px;
 }
 
 #btn-send-message-container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  padding-top: 20px;
 }

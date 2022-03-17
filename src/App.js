@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import React from 'react'
 import Navbar from "./components/Navbar";
 import Connect from "./pages/Connect";
@@ -12,6 +14,7 @@ import EmployerSignUp from "./components/EmployerSignUp";
 import JobSeekerDash from "./components/JobSeekerDash";
 import Feedback from "./components/Feedback";
 import AboutUs from "./components/AboutUs";
+AOS.init();
 
 
 const App = () => {

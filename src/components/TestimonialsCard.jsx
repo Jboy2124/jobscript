@@ -3,7 +3,7 @@ import '../css/testimonials.css'
 
 const TestimonialsCard = (props) => {
   return (
-    <div className='container'>
+    <div data-aos="zoom-in-up" className='container'>
         <div className="row">
             <div id='testimonial-card-design' className="card">
                     <div className="card-body">
