@@ -18,7 +18,7 @@ const EmployerDash = () => {
     employerUser = existingUser[key].personName;
   }
 
-  const navigate = useNavigate();
+  const navigateEmployerLogout = useNavigate();
   const [searchJob, setSearchJob] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [showModalMessage, setShowModalMessage] = useState(false);
@@ -56,14 +56,14 @@ const EmployerDash = () => {
                               <i className="fa fa-user"></i>     Account
                               </button>
                               <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a className="dropdown-item" href="">
+                                <a className="dropdown-item">
                                    <h4>{employerUser}</h4>
                                    <p className="text-danger">Employer</p>
                                 </a>
                                 <a className="dropdown-item" > <i className="fa fa-user"></i> My Profile</a>
                                 <a className="dropdown-item" > <i className="fa fa-folder"></i> Posted Jobs</a>
                                 <a className="dropdown-item" > <i className="fa fa-cog"></i> Account Settings</a>
-                                <a className="dropdown-item" onClick={()=>navigate("/Employee")} > <i className="fa fa-arrow-left"></i> Log Out</a>
+                                <a className="dropdown-item" href="" onClick={()=>navigateEmployerLogout("/Employer")} > <i className="fa fa-arrow-left"></i> Log Out</a>
                                 {/* <Link to="/Employer" className="dropdown-item" > */}
                                   {/* <i className="fa fa-arrow-left"></i>  Log Out */}
                                 {/* </Link> */}
@@ -152,8 +152,37 @@ const EmployerDash = () => {
                           </div>
                           <hr />
                           <h5>Work Experience</h5>
-
-                          {
+                          <div className="row">
+                            <div className="col-sm-8">
+                              {
+                                arrayJobDetails.map(items => {
+                                  return (
+                                    <div className="row pt-3">{items.workExperience.map(i =>{
+                                        return(
+                                          <div id='work-exp-row' className="row pb-3">
+                                            <p id='work-exp-company'>{i.comp}</p>
+                                            <p id='work-exp-pos'>{i.position}</p>
+                                            <p id='work-exp-tenure'>{i.tenure}</p>
+                                          </div>
+                                        )
+                                    })}</div>
+                                  )
+                                })
+                              }
+                            </div>
+                            <div className="col-sm-4">
+                              <div className="row py-3">
+                                  <p>Valuable Skills:</p>
+                                  <p>Value 2</p>
+                                  <p>Value 2</p>
+                                  <p>Value 2</p>
+                                  <p>Value 2</p>
+                                  <p>Value 2</p>
+                                  <p>Value 2</p>
+                              </div>
+                            </div>
+                          </div>
+                          {/* {
                             arrayJobDetails.map(items => {
                               return (
                                 <div className="row pt-3">{items.workExperience.map(i =>{
@@ -167,10 +196,10 @@ const EmployerDash = () => {
                                 })}</div>
                               )
                             })
-                          }
+                          } */}
                        
                           <div className='btn-click-to-apply-container'>
-                              <button id='click-apply' className='btn btn-danger'>Print Resume</button>
+                              <button id='click-apply' onClick={() => alert("Function is not yet define")} className='btn btn-danger'>Print Resume</button>
                               <button className='btn btn-outline-danger' onClick={() => setShowModal(false)}>Close</button>
                           </div>
                         {/* </form> */}

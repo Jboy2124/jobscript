@@ -29,7 +29,8 @@ const DeveloperList = [
                 position: "IAM SailPoint DevOps Engineer",
                 tenure: "Aug 2016 - Feb 2017",
             },
-        ]
+        ],
+        valuableSkill: ["Sketch", "Figma", "ReactJS", "VueJS", "PHP", "Laravel"],
 
     },
     {
@@ -56,7 +57,8 @@ const DeveloperList = [
                 position: "Python Developer",
                 tenure: "Nov 2012 - Dec 2014",
             },
-        ]
+        ], 
+        valuableSkill: ["Illustrator", "Design", "Flutter", "ReactJS", "Hive"],
     },
     {
         id: 3,
@@ -82,7 +84,8 @@ const DeveloperList = [
                 position: "Digital Workplace Solution Designer",
                 tenure: "Jan 2012 - Nov 2016",
             },
-        ]
+        ],
+        valuableSkill: ["Effects", "HTML", "CSS", "Sass", "Javascript"],
     },
     {
         id: 4,
@@ -108,7 +111,8 @@ const DeveloperList = [
                 position: "Project Manager",
                 tenure: "Jan 2012 - Sep 2016",
             },
-        ]
+        ],
+        valuableSkill: ["Responsive", "Mobile", "ReactJS", "Dart"],
     },
     {
         id: 5,

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
-import { Offcanvas, Modal, Button } from 'react-bootstrap'
-import { Link, useNavigate } from 'react-router-dom';
+import { Modal } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom';
 import '../css/jobseekerdash.css'
 import JobSeekerDashCards from './JobSeekerDashCards';
 import JobList from '../data-model/JobList';
@@ -12,14 +12,13 @@ let nameOfUser = "";
 
 
 const JobSeekerDash = () => {
-  const navigate = useNavigate();
+  const navigateJobSeekerLogin = useNavigate();
   const [showModal, setShowModal] = useState(false);
   const [searchJob, setSearchJob] = useState("");
   let txtSearch = useRef(null);
   const existingUser = JSON.parse(localStorage.getItem('RegisterJobSeekerDetails'));
 
   for (const key in existingUser) {
-    // alert(existingUser[key].fname +"  "+existingUser[key].lName);
     nameOfUser = existingUser[key].fname +"  "+ existingUser[key].lName;
   }
 
@@ -54,14 +53,14 @@ const JobSeekerDash = () => {
                                   <i className="fa fa-user"></i> Account
                                   </button>
                                   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a className="dropdown-item" href="#">
+                                    <a className="dropdown-item">
                                       <h4>{nameOfUser}</h4>
                                       <p className="text-danger">Job Seeker</p>
                                     </a>
                                     <a className="dropdown-item" > <i className="fa fa-user"></i> My Profile</a>
                                     <a className="dropdown-item" > <i className="fa fa-folder"></i> Posted Jobs</a>
                                     <a className="dropdown-item" > <i className="fa fa-cog"></i> Account Settings</a>
-                                    <a className="dropdown-item" onClick={()=> navigate("/Employer")}> <i className="fa fa-arrow-left"></i> Log Out</a>
+                                    <a className="dropdown-item" href="" onClick={() => navigateJobSeekerLogin("/Jobseeker")}> <i className="fa fa-arrow-left"></i> Log Out</a>
                                   </div>
                 </div>
           </div>
