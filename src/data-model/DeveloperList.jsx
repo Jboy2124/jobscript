@@ -35,7 +35,7 @@ const DeveloperList = [
     {
         id: 2,
         devImg: "https://snipboard.io/OfYjn3.jpg",
-        devName: "Homer B. Pettigrew",
+        devName: "Homer B. Grew",
         devLocation: "Dayton, OH",
         devMainRole: "Mobile",
         skillSet: "Full Time",
@@ -113,7 +113,7 @@ const DeveloperList = [
     {
         id: 5,
         devImg: "https://snipboard.io/9iRC4L.jpg",
-        devName: "Arnoldo Ubowski",
+        devName: "Arn Ubowski",
         devLocation: "Saint Bernard, PH",
         devMainRole: "Data Scientists",
         skillSet: "Full Time",
@@ -347,7 +347,7 @@ const DeveloperList = [
     {
         id: 14,
         devImg: "https://snipboard.io/RAjJs3.jpg",
-        devName: "Mandy Gleichner",
+        devName: "Mandy Cruz",
         devLocation: "Nueva Vizcaya , PH",
         devMainRole: "Python Developer",
         skillSet: "Full Time",

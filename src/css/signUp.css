@@ -141,9 +141,10 @@
 @media (max-width: 768px) {
   .containerSignUp form {
     width: 60%;
-    top: 80px;
+    top: 10px;
   }
 }
+
 @media (max-width: 425px) {
   .containerSignUp form {
     width: 80%;
