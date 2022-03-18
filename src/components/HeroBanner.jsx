@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 const HeroBanner = () => {
 
   return (
-        <div className='container'> 
+        <div id='hero-banner-page-main-container' className='container'> 
             <div className='container'> 
                 <div className="row mt-5 homepageContainer">
                     <div className="col-md-6 col-xs-5 ">

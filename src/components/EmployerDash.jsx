@@ -171,7 +171,7 @@ const EmployerDash = () => {
                             </div>
                             <div className="col-sm-4">
                               <div className="row py-3">
-                                  <p id='valueble-skills-list-header'>Valuable Skills</p>
+                                  <p id='valueble-skills-list-header'>Qualifications/Skills</p>
                                   <ul id='valuable-skills-list-ul'>
                                     {
                                       items.valuableSkill.map((d) => {

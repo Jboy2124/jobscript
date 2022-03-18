@@ -4,7 +4,7 @@ const EmployerTestimonials = [
         id: 1,
         imgPath: "images/testimony/testimony4.png",
         name: "Melinda M. Baldwin",
-        testimonial: "We've hired many outstanding Developers from JobSCript as full-time employees. They tend to be very professional and experienced. I have never hired someone like them from other platforms.",
+        testimonial: "We've hired many outstanding Developers from JobScript as full-time employees. They tend to be very professional and experienced. I have never hired someone like them from other platforms.",
         type: "Employer"
     },
     {

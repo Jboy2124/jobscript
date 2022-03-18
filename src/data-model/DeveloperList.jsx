@@ -4,7 +4,7 @@ const DeveloperList = [
         id: 1,
         devImg: "https://snipboard.io/LTGtUW.jpg",
         devName: "Katharine Dean",
-        devLocation: "802 Valle Verde Terrraces, Meralco Ave. Ext. 1600, Pasig City, Metro Manila,",
+        devLocation: "802 Valle Verde Terrraces, Meralco Ave. Ext. 1600, Pasig City, Metro Manila",
         devMainRole: "UI/UX Designer",
         skillSet: "Full Time",
         skillSet2: "Sketch",

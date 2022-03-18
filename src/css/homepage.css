@@ -6,7 +6,12 @@
   font-weight: 900;
   letter-spacing: -2px;
 }
-
+#hero-banner-page-main-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .homepageText {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
@@ -24,6 +29,7 @@
   margin: auto;
   padding-top: 25px;
 }
+
 
 @media (max-width: 768px) {
   .homepageContainer {

@@ -47,7 +47,7 @@ const JobSeekerSignUp = () => {
         <form onSubmit={handleSubmit}  >
             <div className="signUpContainerTwo">
                 <h1>Job Seeker Sign Up</h1>
-                <p><i class="fa fa-check" ></i> Sign up for FREE to easily get job matches and apply</p>
+                <p><i className="fa fa-check" ></i> Sign up for FREE to easily get job matches and apply</p>
                 <input  type="text" name="firsttName" required placeholder="First Name" ref={firstNameRef}/><br/><br/>                 
                 <input  type="text" name="lastName" required placeholder="Last Name" ref={lastNameRef}/><br/>  <br/> 
                 <input type="text" name="email" required placeholder="Email Address" ref={emailRef}/><br/>  <br/> 

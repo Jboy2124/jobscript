@@ -5,6 +5,7 @@ import '../css/jobseekerdash.css'
 import JobSeekerDashCards from './JobSeekerDashCards';
 import JobList from '../data-model/JobList';
 import Footer from './Footer';
+import Underconstruction from './Underconstruction'
 let salaryValue = 0;
 let arrayJobDetails = [];
 let nameOfUser = "";
@@ -79,6 +80,7 @@ const JobSeekerDash = () => {
                 }).map((items) => {
                   return (
                     <div id='display-card-columns' className="col">
+                      {(items.id != null) ? 
                       <JobSeekerDashCards handlesShowModal={handlesShowModal} 
                                 id={items.id} 
                                 company={items.company}
@@ -88,7 +90,7 @@ const JobSeekerDash = () => {
                                 category={items.category} 
                                 title={items.jobTitle} 
                                 snippets={items.jobSnippet} 
-                                showData={true}/>
+                                showData={true}/> : <Underconstruction />}
                     </div>
                   )
                 })

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Underconstruction = () => {
   return (
-    <div>
-      404
+    <div id='error404-container' className='container'>
+      <h1>Page Not Found</h1>
     </div>
   )
 }
