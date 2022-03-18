@@ -1,5 +1,5 @@
 .about-section {
-  background: url(../images/footer-images/about-pic.jpg) no-repeat left;
+  background: url("../images/footer-images/about-pic.jpg") no-repeat left;
   background-image: 50%;
   background-color: #e63c3c;
   overflow: hidden;
