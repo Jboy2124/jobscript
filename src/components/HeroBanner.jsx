@@ -38,7 +38,6 @@ const HeroBanner = () => {
                    
         </div>
 
-    // </div>
   )
 }
 

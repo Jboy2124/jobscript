@@ -93,7 +93,6 @@ const Footer = () => {
                         <p><a href="https://twitter.com/JobStreetPH">Twitter</a></p>
                         <p><a href="https://www.linkedin.com/company/jobstreetph/">LinkedIn</a></p>
                         <p><a href="https://www.youtube.com/user/JobStreetPhilippines">Youtube</a></p>
-                        {/* <p><a href="#">Testimonials</a></p> */}
                     </div>
                     <div id='footer-columns' className="col-sm-2">
                         <h5>Legal</h5>

@@ -10,7 +10,6 @@ let arrayJobDetails = [];
 
 const EmployerDash = () => {
 
-  // RegisterJobSeekerDetails
   const existingUser = JSON.parse(localStorage.getItem('RegisterEmployerDetails'));
   let employerUser = "";
 
@@ -49,7 +48,6 @@ const EmployerDash = () => {
                     <input id='text-developers-search-box' type="text" ref={txtSearch} className="form-control  " onChange={searchJobList} placeholder="Search Developers..."></input>
                 </div>
             </div>
-            {/* <button type='button' className='btn btn-primary' onClick={handleShow}>Launch</button> */}
             <div className="dropdown">
                               
                               <button className="btn btn-secondary dropdown-toggle buttonStyleEmployer" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,9 +62,6 @@ const EmployerDash = () => {
                                 <a className="dropdown-item" > <i className="fa fa-folder"></i> Posted Jobs</a>
                                 <a className="dropdown-item" > <i className="fa fa-cog"></i> Account Settings</a>
                                 <a className="dropdown-item" href="" onClick={()=>navigateEmployerLogout("/Employer")} > <i className="fa fa-arrow-left"></i> Log Out</a>
-                                {/* <Link to="/Employer" className="dropdown-item" > */}
-                                  {/* <i className="fa fa-arrow-left"></i>  Log Out */}
-                                {/* </Link> */}
                               </div>
             </div>
           </div>
@@ -112,7 +107,6 @@ const EmployerDash = () => {
 
 
           { arrayJobDetails.map((items) => {
-                // salaryValue = parseFloat(items.salary).toLocaleString(undefined, {maximumFractionDigits: 2});
                 return (
                   <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered >
                     <Modal.Header className='modal-header'>
@@ -137,8 +131,6 @@ const EmployerDash = () => {
 
                           <div className="row pb-2">
                             <div className="col-sm-4">
-                              {/* <p>AGE</p>
-                              <p><b>30--years</b></p> */}
                             </div>
                             <div className="col-sm-4">
                               <p id='basic-info-tag'>LOCATION</p>
@@ -190,52 +182,12 @@ const EmployerDash = () => {
                           </div>
 
                       </Modal.Body>
-                    {/* <Modal.Footer className='modal-footer-display'>
-                          <div>&copy; 2022 JobScript - All Rights Reserved</div>
-                      </Modal.Footer> */}
                   </Modal> 
                 )
               })
             }
 
-            {/* <Modal show={showModalMessage} onHide={() => setShowModalMessage(false)} size="lg" centered >
-              <Modal.Header>
-                <Modal.Title><h5>Send Message</h5> </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <div>
-                  <form id='send-message-form' action="">
-                    <div className="row d-flex justify-content-center align-items-center pb-3">
-                      <div className="col-sm-3">Sender</div>
-                      <div className="col-sm-9">
-                        <input type="text" className="form-control" placeholder="example@email.com"/>
-                      </div>
-                    </div>
-                    <div className="row d-flex justify-content-center align-items-center pb-3">
-                      <div className="col-sm-3">Recepient</div>
-                      <div className="col-sm-9">
-                        <input type="text" className="form-control" placeholder="example@email.com"/>
-                      </div>
-                    </div>
-                    <div className="row d-flex justify-content-center align-items-center pb-3">
-                      <div className="col-sm-3">Subject</div>
-                      <div className="col-sm-9">
-                        <input type="text" className="form-control" placeholder=""/>
-                      </div>
-                    </div>
-                    <div className="row d-flex justify-content-center align-items-start pb-3">
-                      <div className="col-sm-3">Message</div>
-                      <div className="col-sm-9">
-                        <textarea className="form-control" name="" id="" cols="30" rows="5"></textarea>
-                      </div>
-                    </div>
-                    <div id='btn-send-message-container'>
-                      <button className="btn btn-danger">Send Message</button>
-                    </div>
-                  </form>
-                </div>
-              </Modal.Body>
-            </Modal> */}
+            
       </div>
     )
 }

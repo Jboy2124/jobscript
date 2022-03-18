@@ -395,7 +395,7 @@ const DeveloperList = [
         workExperience: [
             {
                 comp: "Cultivate Open-Source Supply-Chains",
-                position: "Executive – Financial System Operations (RPA- BluePrism)",
+                position: "Executive Financial System Operations (RPA- BluePrism)",
                 tenure: "Jan 2019 - Dec 2020",
             },
             {

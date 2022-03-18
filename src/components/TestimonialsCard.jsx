@@ -14,9 +14,6 @@ const TestimonialsCard = (props) => {
                     <img id='testimonials-img' src={props.img} alt="" className="card-img-bottom"/>
                     <p id='col-name' className='card-title pt-2'>{props.name}<br/>{props.type}</p>
                   </div>
-                  {/* <div id='col-name' className="col-sm-8">
-                   
-                  </div> */}
                 </div>
             </div>
         </div>

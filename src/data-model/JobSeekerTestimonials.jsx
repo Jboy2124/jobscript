@@ -5,7 +5,7 @@ const TestimonialsList = [
         id: 1,
         imgPath: "images/testimony/testimony1.png",
         name: "Beth J. Sadler",
-        testimonial: "Thanks guys, for responding to my application. I had to respond to your email as you’re the first company EVER to do so in my history of job applications when I hadn’t been initially successful. This makes you unique in this modern world.",
+        testimonial: "Thanks guys, for responding to my application. I had to respond to your email as youre the first company EVER to do so in my history of job applications when I hadn’t been initially successful. This makes you unique in this modern world.",
         type: "Job-seeker"
     },
     {

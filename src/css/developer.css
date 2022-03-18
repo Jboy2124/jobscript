@@ -3,7 +3,6 @@
 }
 #card-container {
   height: auto;
-  /* background-color: skyblue ; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +10,6 @@
 
 #developer-card {
   width: 21rem;
-  /* box-shadow: 3px 3px 1px 1px rgb(216, 214, 214); */
   border-radius: 20px;
 }
 
@@ -35,12 +33,10 @@
 @media screen and (min-width: 280px) and (max-width: 768px) {
   #card-container {
     height: 100%;
-    /* display: block; */
   }
 
   #dev-cards {
     margin-top: 20px;
-    /* font-display: block; */
   }
 }
 

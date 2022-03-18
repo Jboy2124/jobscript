@@ -9,7 +9,6 @@ const JobSeekerDashCards = (props) => {
   return (
     <div data-aos="fade-up" id='jobseeker-card' className='card' style={{ width: "20rem", height: "26rem" }}>
         <div id='jobseeker-card-header' className='card-header'>{props.category}</div>
-        {/* <div className='jobseeker-top-icon-container'><img id='jobseeker-top-icon' src={JobIcon} alt="" /></div> */}
         <div className="card-body">
             <h5 id='jobseeker-card-title' className="card-title">{props.title}</h5>
             <h6 id='jobseeker-card-company'>{props.company}</h6>

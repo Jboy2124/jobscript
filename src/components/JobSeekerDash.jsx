@@ -24,16 +24,12 @@ const JobSeekerDash = () => {
   }
 
   
-  //This will get the ID of the  selected card
-  // and filter it and assign it to the array
   const handlesShowModal = (clickedCardValue) => {
     setShowModal(clickedCardValue[1]);
     arrayJobDetails = JobList.filter(item => item.id === clickedCardValue[0]).map(list => { return list });
   }
 
-  
-  //This will get the value of the text
-  //on every input (onchange evemt)
+
   let searchJobList = (e) => {
     e.preventDefault();
     setSearchJob(txtSearch.current.value);
@@ -143,9 +139,6 @@ const JobSeekerDash = () => {
                               <button className='btn btn-outline-danger' onClick={() => setShowModal(false)}>Close</button>
                           </div>
                       </Modal.Body>
-                    {/* <Modal.Footer className='modal-footer-display'>
-                          <div>&copy; 2022 JobScript - All Rights Reserved</div>
-                      </Modal.Footer> */}
                   </Modal> 
                 )
               })

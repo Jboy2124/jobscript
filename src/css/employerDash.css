@@ -13,8 +13,7 @@
 }
 
 #text-developers-search-box {
-  border-color: #ced4da; /* default B5 color or set your own color*/
-  /* border: none !important;  */
+  border-color: #ced4da; 
   outline: none !important;
   box-shadow: none !important;
 }
@@ -106,7 +105,7 @@
   }
   .searchboxEmployer {
     width: 60%;
-    /* background-color: white; */
+
   }
 }
 
@@ -139,10 +138,7 @@
   font-size: 12px;
   padding-left: 70px;
 }
-/* 
-#work-exp-row {
-  padding-left: 10px;
-} */
+
 
 
 #send-message-form {

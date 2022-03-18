@@ -22,9 +22,6 @@ const TheDeveloper = () => {
           })}
         </div>
       </div>
-      {/* <div id='team-footer' className="row"></div> */}
-      {/* <div id='meetTheTeamFooter' className="row"></div> */}
-
       <div className="container-fluid p-0">
         <Footer />
       </div>
