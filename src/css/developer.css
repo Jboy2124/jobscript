@@ -30,15 +30,6 @@
   background-color: #e63c3c;
 }
 
-@media screen and (min-width: 280px) and (max-width: 768px) {
-  #card-container {
-    height: 100%;
-  }
-
-  #dev-cards {
-    margin-top: 20px;
-  }
-}
 
 .row > * {
   padding-left: 0px;
@@ -52,4 +43,14 @@
   letter-spacing: 4px;
   font-weight: 700;
   font-size: 20px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  #card-container {
+    height: 100%;
+  }
+
+  #dev-cards {
+    margin-top: 20px;
+  }
 }

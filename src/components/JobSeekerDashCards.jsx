@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../css/jobseekerdash.css'
-import JobIcon from '../images/job-search.png'
 
 const JobSeekerDashCards = (props) => {
     let handleExpandJobList = () => {

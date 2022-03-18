@@ -5,7 +5,7 @@ import { useRef,  useState, useEffect} from 'react'
 import EmployerLogIn from './EmployerLogIn';
 
 
-const EmployerSignUp = () => {  
+  const EmployerSignUp = () => {  
   const [returnValue, setReturnValue] = useState(false);
   const [id, setId] = useState(Date.now())
   const personNameRef = useRef(null);
