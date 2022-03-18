@@ -165,7 +165,7 @@
   font-size: 14px;
   font-weight: bold;
   font-style: italic;
-  /* padding-left: -20px; */
+  padding-left: 20px;
 }
 
 #valuable-skills-list-value {
@@ -174,5 +174,5 @@
 }
 
 #valuable-skills-list-ul {
-  padding-left: 18px;
+  padding-left: 30px;
 }

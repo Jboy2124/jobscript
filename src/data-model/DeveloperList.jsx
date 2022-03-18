@@ -24,11 +24,6 @@ const DeveloperList = [
                 position: "Network Engineer",
                 tenure: "Feb 2018 - Oct 2019",
             },
-            {
-                comp: "Harber-Kreiger",
-                position: "IAM SailPoint DevOps Engineer",
-                tenure: "Aug 2016 - Feb 2017",
-            },
         ],
         valuableSkill: ["Sketch", "Figma", "ReactJS", "VueJS", "PHP", "Laravel"],
 

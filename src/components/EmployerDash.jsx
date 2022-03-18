@@ -120,7 +120,7 @@ const EmployerDash = () => {
                     </Modal.Header>
                       <Modal.Body className='modal-body'>
                         <h5>Basic Information</h5>
-                          <div className="row pb-4">
+                          <div className="row pb-3">
                             <div className="col-sm-4">
                               <p id='basic-info-tag'>AGE</p>
                               <p id='basic-info-value-tag'>{items.age} years old</p>
@@ -135,7 +135,7 @@ const EmployerDash = () => {
                             </div>
                           </div>
 
-                          <div className="row pb-4">
+                          <div className="row pb-2">
                             <div className="col-sm-4">
                               {/* <p>AGE</p>
                               <p><b>30--years</b></p> */}
@@ -156,9 +156,9 @@ const EmployerDash = () => {
                               {
                                 arrayJobDetails.map(items => {
                                   return (
-                                    <div className="row pt-3">{items.workExperience.map(i =>{
+                                    <div className="row pt-2">{items.workExperience.map(i =>{
                                         return(
-                                          <div id='work-exp-row' className="row pb-3">
+                                          <div id='work-exp-row' className="row pb-2">
                                             <p id='work-exp-company'>{i.comp}</p>
                                             <p id='work-exp-pos'>{i.position}</p>
                                             <p id='work-exp-tenure'>{i.tenure}</p>
@@ -170,7 +170,7 @@ const EmployerDash = () => {
                               }
                             </div>
                             <div className="col-sm-4">
-                              <div className="row py-3">
+                              <div className="row py-2">
                                   <p id='valueble-skills-list-header'>Qualifications/Skills</p>
                                   <ul id='valuable-skills-list-ul'>
                                     {
@@ -190,9 +190,9 @@ const EmployerDash = () => {
                           </div>
 
                       </Modal.Body>
-                    <Modal.Footer className='modal-footer-display'>
+                    {/* <Modal.Footer className='modal-footer-display'>
                           <div>&copy; 2022 JobScript - All Rights Reserved</div>
-                      </Modal.Footer>
+                      </Modal.Footer> */}
                   </Modal> 
                 )
               })
