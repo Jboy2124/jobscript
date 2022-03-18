@@ -3,7 +3,6 @@ import img2 from '../images/home-images/Employer.jpg'
 import img3 from '../images/home-images/JobSeeker.jpg'
 import '../css/testimonials.css'
 
-import {makeStyles} from "@mui/styles";
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 
@@ -61,7 +60,7 @@ const Services = () => {
                 </div>
             </div>
         </div>  
-        <div className="container">
+        <div data-aos="fade-up" className="container">
             <div  className='row'>
                 <div className="col">
                     <Testimonials />

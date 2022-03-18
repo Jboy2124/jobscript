@@ -28,7 +28,7 @@ const JobSeekerDash = () => {
   // and filter it and assign it to the array
   const handlesShowModal = (clickedCardValue) => {
     setShowModal(clickedCardValue[1]);
-    arrayJobDetails = JobList.filter(item => item.id == clickedCardValue[0]).map(list => { return list });
+    arrayJobDetails = JobList.filter(item => item.id === clickedCardValue[0]).map(list => { return list });
   }
 
   
@@ -69,7 +69,7 @@ const JobSeekerDash = () => {
             <div className="row">
               {
                 JobList.filter((i) => {
-                  if(txtSearch == ""){
+                  if(txtSearch === ""){
                     return i
                   }else if (i.category.toLowerCase().includes(searchJob.toLocaleLowerCase()) || 
                             i.aor.toLocaleLowerCase().includes(searchJob.toLocaleLowerCase()) || 
@@ -106,7 +106,7 @@ const JobSeekerDash = () => {
             { arrayJobDetails.map((items) => {
                 salaryValue = parseFloat(items.salary).toLocaleString(undefined, {maximumFractionDigits: 2});
                 return (
-                  <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered >
+                  <Modal className='job-details-modal' show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered >
                     <Modal.Header className='modal-header'>
                       <Modal.Title className='modal-title'>ABOUT THE JOB IN DETAILS</Modal.Title>
                       <div className='modal-tag'>
@@ -143,9 +143,9 @@ const JobSeekerDash = () => {
                               <button className='btn btn-outline-danger' onClick={() => setShowModal(false)}>Close</button>
                           </div>
                       </Modal.Body>
-                    <Modal.Footer className='modal-footer-display'>
+                    {/* <Modal.Footer className='modal-footer-display'>
                           <div>&copy; 2022 JobScript - All Rights Reserved</div>
-                      </Modal.Footer>
+                      </Modal.Footer> */}
                   </Modal> 
                 )
               })
