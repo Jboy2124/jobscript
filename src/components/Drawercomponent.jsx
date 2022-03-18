@@ -3,7 +3,6 @@ import { Divider, Drawer, IconButton, List, ListItem, ListItemText } from "@mui/
 import { makeStyles, } from "@mui/styles";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const drawerStyles = makeStyles(() => ({
   link: { textDecoration: "none",
