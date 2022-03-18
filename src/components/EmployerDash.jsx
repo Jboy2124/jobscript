@@ -198,7 +198,7 @@ const EmployerDash = () => {
               })
             }
 
-            <Modal show={showModalMessage} onHide={() => setShowModalMessage(false)} size="lg" centered >
+            {/* <Modal show={showModalMessage} onHide={() => setShowModalMessage(false)} size="lg" centered >
               <Modal.Header>
                 <Modal.Title><h5>Send Message</h5> </Modal.Title>
               </Modal.Header>
@@ -235,7 +235,7 @@ const EmployerDash = () => {
                   </form>
                 </div>
               </Modal.Body>
-            </Modal>
+            </Modal> */}
       </div>
     )
 }
