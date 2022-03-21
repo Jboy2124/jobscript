@@ -1,6 +1,4 @@
-/* * {
-  font-size: 14px;
-} */
+
 #card-container {
   height: auto;
   display: flex;
@@ -31,10 +29,10 @@
 }
 
 
-.row > * {
+/* .row > * {
   padding-left: 0px;
   padding-right: 0px;
-}
+} */
 .card-img-top {
   border-radius: 20px;
 }
