@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jobscript/static/css/main.7d0abad3.css",
-    "main.js": "/jobscript/static/js/main.cdc8dcfd.js",
+    "main.js": "/jobscript/static/js/main.f83ffdb1.js",
     "static/media/googleplay.png": "/jobscript/static/media/googleplay.cc1c88d46010aa415887.png",
     "static/media/Employer.jpg": "/jobscript/static/media/Employer.07e4c7f83f4f5ff2ca92.jpg",
     "static/media/googleplay mobile.png": "/jobscript/static/media/googleplay mobile.ef867a34db23cb1b6362.png",
@@ -10,10 +10,10 @@
     "static/media/logo2.gif": "/jobscript/static/media/logo2.f9fb2d93871d82637cba.gif",
     "index.html": "/jobscript/index.html",
     "main.7d0abad3.css.map": "/jobscript/static/css/main.7d0abad3.css.map",
-    "main.cdc8dcfd.js.map": "/jobscript/static/js/main.cdc8dcfd.js.map"
+    "main.f83ffdb1.js.map": "/jobscript/static/js/main.f83ffdb1.js.map"
   },
   "entrypoints": [
     "static/css/main.7d0abad3.css",
-    "static/js/main.cdc8dcfd.js"
+    "static/js/main.f83ffdb1.js"
   ]
 }
