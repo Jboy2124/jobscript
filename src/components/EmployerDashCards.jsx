@@ -25,8 +25,8 @@ const EmployerDashCards = (props) => {
             </p>
         </div>
         <div className='btn-view-more-job'>
-        <button id='btn-view-more-jobs' onClick={handleExpandJobList} type='button' className='btn btn-outline-danger'>View more</button> 
-        <button id='btn-view-more-jobs' onClick={handleSendMessageEvent} type='button' className='btn btn-outline-danger m-2'> Message </button>
+            <button id='btn-view-more-jobs' onClick={handleExpandJobList} type='button' className='btn btn-outline-danger'>View more</button> 
+            <button id='btn-view-more-jobs' onClick={handleSendMessageEvent} type='button' className='btn btn-outline-danger m-2'> Message </button>
         </div>
         
     </div>

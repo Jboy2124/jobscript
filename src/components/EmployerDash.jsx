@@ -51,7 +51,7 @@ const EmployerDash = () => {
             <div className="dropdown">
                               
                               <button className="btn btn-secondary dropdown-toggle buttonStyleEmployer" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i className="fa fa-user"></i> Account
+                                <i className="fa fa-user"></i> Account
                               </button>
                               <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a className="dropdown-item">
@@ -186,8 +186,6 @@ const EmployerDash = () => {
                 )
               })
             }
-
-            
       </div>
     )
 }

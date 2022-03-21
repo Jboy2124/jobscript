@@ -10,7 +10,7 @@ const ContactUs = () => {
                     or an employer interested in our <br/>  products and services,
                     we want to hear from you! Please choose from the following 2 options.</p>
 
-        <div className="row  ">
+        <div className="row">
           <div className="container justify-content-center d-flex flexColumn">
               <div className="col-sm-5 border p-3 width">
                   <p className='serviceTopicEmployer fontSmaller'> Job Seeker </p>
@@ -20,7 +20,7 @@ const ContactUs = () => {
                   <p>(Standard STD/ charges apply)</p>
                   <p>*Press 3 when the IVR messages comes up</p>
                   <p>To reach us through mail, click the button below.</p>
-                  <button type='button' className='btn btn-outline-danger' >Message Us</button>
+                  <button type='button' className='btn btn-outline-danger'>Message Us</button>
               </div>
               <div className="col-sm-5 border p-3 width">
               <p className= 'serviceTopicEmployer fontSmaller'>Employer </p>
