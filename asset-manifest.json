@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/jobscript/static/css/main.cf93294f.css",
-    "main.js": "/jobscript/static/js/main.c215fdde.js",
-    "static/media/googleplay.png": "/jobscript/static/media/googleplay.cc1c88d46010aa415887.png",
-    "static/media/Employer.jpg": "/jobscript/static/media/Employer.07e4c7f83f4f5ff2ca92.jpg",
-    "static/media/googleplay mobile.png": "/jobscript/static/media/googleplay mobile.ef867a34db23cb1b6362.png",
-    "static/media/JobSeeker.jpg": "/jobscript/static/media/JobSeeker.da1131a12dd576d71194.jpg",
-    "static/media/hero_banner-removebg-preview.png": "/jobscript/static/media/hero_banner-removebg-preview.e84e1a0f4328d797497c.png",
-    "static/media/logo2.gif": "/jobscript/static/media/logo2.f9fb2d93871d82637cba.gif",
-    "index.html": "/jobscript/index.html",
-    "main.cf93294f.css.map": "/jobscript/static/css/main.cf93294f.css.map",
-    "main.c215fdde.js.map": "/jobscript/static/js/main.c215fdde.js.map"
+    "main.css": "/https;//jboy2124.github.io/jobscript/static/css/main.7d0abad3.css",
+    "main.js": "/https;//jboy2124.github.io/jobscript/static/js/main.c0385a64.js",
+    "static/media/googleplay.png": "/https;//jboy2124.github.io/jobscript/static/media/googleplay.cc1c88d46010aa415887.png",
+    "static/media/Employer.jpg": "/https;//jboy2124.github.io/jobscript/static/media/Employer.07e4c7f83f4f5ff2ca92.jpg",
+    "static/media/googleplay mobile.png": "/https;//jboy2124.github.io/jobscript/static/media/googleplay mobile.ef867a34db23cb1b6362.png",
+    "static/media/JobSeeker.jpg": "/https;//jboy2124.github.io/jobscript/static/media/JobSeeker.da1131a12dd576d71194.jpg",
+    "static/media/hero_banner-removebg-preview.png": "/https;//jboy2124.github.io/jobscript/static/media/hero_banner-removebg-preview.e84e1a0f4328d797497c.png",
+    "static/media/logo2.gif": "/https;//jboy2124.github.io/jobscript/static/media/logo2.f9fb2d93871d82637cba.gif",
+    "index.html": "/https;//jboy2124.github.io/jobscript/index.html",
+    "main.7d0abad3.css.map": "/https;//jboy2124.github.io/jobscript/static/css/main.7d0abad3.css.map",
+    "main.c0385a64.js.map": "/https;//jboy2124.github.io/jobscript/static/js/main.c0385a64.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf93294f.css",
-    "static/js/main.c215fdde.js"
+    "static/css/main.7d0abad3.css",
+    "static/js/main.c0385a64.js"
   ]
 }
