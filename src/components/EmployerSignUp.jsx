@@ -52,7 +52,7 @@ import EmployerLogIn from './EmployerLogIn';
                 <h1>Start hiring candidates!</h1>
                 <p><i class="fa fa-check" ></i>Access more than 12 million talents all over the world</p>
                 <input type="text" name="username" required placeholder="Contact Person Name" ref={personNameRef}/><br/><br/>                 
-                <input type="text" name="password" required placeholder="Registered Business Name" ref={businessNameRef}/><br/>  <br/> 
+                <input type="text" name="password" required placeholder="Registered Business Name" ref={businessNameRef}/><br/><br/> 
                 <input type="number" name="number" required placeholder="Mobile Number" ref={numberRef}/><br/>  <br/> 
                 <input type="text" name="email" required placeholder="Email Address" ref={emailRef}/><br/>  <br/> 
                 <input type="text" name="password"  required placeholder="Password" ref={passwordRef}/><br/>
