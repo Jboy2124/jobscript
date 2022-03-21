@@ -43,7 +43,6 @@
     align-items: center;
 }
 
-/* JOBSEEKER CARDS STYLE  */
 
 #jobseeker-card-header {
     text-align: end;
@@ -119,7 +118,6 @@
 }
 
 
-/* MODAL STYLE  */
 .modal-header {
     background-color: #e63c3c;
     color: white;

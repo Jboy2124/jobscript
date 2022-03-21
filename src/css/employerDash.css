@@ -109,19 +109,16 @@
 }
 
 
-/* MODAL STYLE  */
 
 #basic-info-tag {
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
-  /* text-decoration: underline; */
   padding-left: 40px;
 }
 
 #basic-info-value-tag {
   font-size: 12px;
-  /* font-weight: bold; */
   padding-top: 3px;
   padding-left: 40px;
 }
@@ -165,7 +162,6 @@
 
 #valuable-skills-list-value {
   font-size: 12px;
-  /* padding-left: 10px; */
 }
 
 #valuable-skills-list-ul {

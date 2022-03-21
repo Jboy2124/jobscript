@@ -105,7 +105,6 @@
 
 #testimonial-card-design:hover {
   box-shadow: 7px 7px 5px 1px lightgray;
-  /* transform: scale(1.01); */
   transition: 0.3s ease-in-out;
 }
 
