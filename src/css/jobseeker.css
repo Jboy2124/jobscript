@@ -3,11 +3,11 @@
 .logo {
   height: 100vh;
   width: 100%;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 .logo::before,
 .logo::after {
-  content: "";
+  content: " ";
   position: absolute;
   left: 0;
   top: 0;

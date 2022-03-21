@@ -13,7 +13,7 @@ const Testimonials = () => {
             JobSeekerTestimonials.map((items) => {
               return(
                 <div className="col pb-5">
-                  <TestimonialsCard testimonial={items.testimonial} type={items.type} name={items.name} img={items.imgPath} />
+                  <TestimonialsCard testimonialid={items.id} testimonial={items.testimonial} type={items.type} name={items.name} img={items.imgPath} />
                 </div>
               )
             })
