@@ -12,7 +12,6 @@ import EmployerSignUp from "./components/EmployerSignUp";
 import JobSeekerDash from "./components/JobSeekerDash";
 import Feedback from "./components/Feedback";
 import AboutUs from "./components/AboutUs";
-import Underconstruction from "./components/Underconstruction";
 AOS.init();
 
 
