@@ -6,7 +6,7 @@ const JobSeekerDashCards = (props) => {
         props.handlesShowModal([props.id,props.showData]);
     }
   return (
-    <div data-aos="fade-up" id='jobseeker-card' className='card' style={{ width: "20rem", height: "26rem" }}>
+    <div id='jobseeker-card' className='card' style={{ width: "20rem", height: "26rem" }}>
         <div id='jobseeker-card-header' className='card-header'>{props.category}</div>
         <div className="card-body">
             <h5 id='jobseeker-card-title' className="card-title">{props.title}</h5>

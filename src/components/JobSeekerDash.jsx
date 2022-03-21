@@ -61,7 +61,7 @@ const JobSeekerDash = () => {
                                   </div>
                 </div>
           </div>
-          <div data-aos="fade-up" id='card-display-container' className="container pb-5">
+          <div id='card-display-container' className="container pb-5">
             <div className="row">
               {
                 JobList.filter((i) => {
@@ -76,7 +76,6 @@ const JobSeekerDash = () => {
                 }).map((items) => {
                   return (
                     <div id='display-card-columns' className="col">
-                      {(items.id != null) ? 
                       <JobSeekerDashCards handlesShowModal={handlesShowModal} 
                                 id={items.id} 
                                 company={items.company}
@@ -86,7 +85,7 @@ const JobSeekerDash = () => {
                                 category={items.category} 
                                 title={items.jobTitle} 
                                 snippets={items.jobSnippet} 
-                                showData={true}/> : <Underconstruction />}
+                                showData={true}/>
                     </div>
                   )
                 })

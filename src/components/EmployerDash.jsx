@@ -65,7 +65,7 @@ const EmployerDash = () => {
                               </div>
             </div>
           </div>
-          <div data-aos="fade-up" id='card-display-container' className="container pb-5">
+          <div id='card-display-container' className="container pb-5">
             <div className="row">
               {
                 DeveloperList.filter((i) => {

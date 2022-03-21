@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
-import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Connect from "./pages/Connect";
 import Home from './pages/Home';
@@ -34,7 +33,6 @@ const App = () => {
         <Route exact path="/JobSeekerDash" element={<JobSeekerDash />}> </Route>
         <Route exact path="/Feedback" element={<Feedback/>}> </Route>
         <Route exact path="/AboutUs" element={<AboutUs/>}> </Route>
-        <Route path="*" element={Underconstruction}></Route>
      </Routes>
    </Router>
   )
